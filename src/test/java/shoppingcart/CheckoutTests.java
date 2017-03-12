@@ -21,4 +21,12 @@ public class CheckoutTests {
     private void thenTotalWillBe0() {
         assertEquals(new Money(0), checkout.total());
     }
+
+    @Test
+    public void totalIs50WhenNoItemAIsScanned() {
+        Checkout checkout = new Checkout();
+        checkout.scan("A");
+
+        assertEquals(new Money(50), checkout.total());
+    }
 }
