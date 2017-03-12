@@ -7,6 +7,10 @@ public class Money {
         this.amount = amount;
     }
 
+    public void add(Money itemPrice) {
+        amount = itemPrice.amount;
+    }
+
     @Override
     public boolean equals(Object object) {
         return ((Money) object).amount == amount;

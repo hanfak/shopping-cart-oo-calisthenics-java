@@ -1,0 +1,22 @@
+package shoppingcart;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PricingRules {
+    private Map<Item, Money> pricingRules = new HashMap<>();
+
+    public PricingRules() {
+        pricingRules.put(new Item("A"), new Money(50));
+        pricingRules.put(new Item("B"), new Money(30));
+    }
+
+    private Money findPrice(Item item) {
+        return pricingRules.get(item);
+    }
+
+    public void addScannedItemToTotal(Item item, Money totalMoney) {
+        Money itemPrice = findPrice(item);
+        totalMoney.add(itemPrice);
+    }
+}
