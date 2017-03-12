@@ -1,14 +1,14 @@
 package shoppingcart;
 
-/**
- * Created by hanfak on 12/03/2017.
- */
 public class Money {
+    private int amount;
+
     public Money(int amount) {
+        this.amount = amount;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return true;
+    public boolean equals(Object object) {
+        return ((Money) object).amount == amount;
     }
 }

@@ -1,13 +1,14 @@
 package shoppingcart;
 
-import junit.framework.TestCase;
 import org.junit.Test;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class CheckoutTests {
     @Test
     public void totalIs0WhenNoItemIsScanned() {
         Checkout checkout = new Checkout();
 
-        TestCase.assertEquals(new Money(0), checkout.total());
+        assertEquals(new Money(0), checkout.total());
     }
 }
