@@ -10,6 +10,7 @@ public class Checkout {
     public void scan(Item item) {
         if (item.equals(new Item("A")))
             totalMoney = new Money(50);
-        totalMoney = new Money(30);
+        else
+            totalMoney = new Money(30);
     }
 }
