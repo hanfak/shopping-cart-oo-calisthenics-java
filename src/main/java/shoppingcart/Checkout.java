@@ -1,13 +1,13 @@
 package shoppingcart;
 
 public class Checkout {
-    private Money money = new Money(0);
+    private Money totalMoney = new Money(0);
 
     public Money total(){
-        return money;
+        return totalMoney;
     }
 
-    public void scan(String item) {
-        money = new Money(50);
+    public void scan(Item item) {
+        totalMoney = new Money(50);
     }
 }
