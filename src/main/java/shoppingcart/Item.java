@@ -7,9 +7,13 @@ public class Item {
         this.item = item;
     }
 
-
     @Override
     public boolean equals(Object object) {
         return ((Item) object).item == item;
+    }
+
+    @Override
+    public int hashCode(){
+        return item.hashCode();
     }
 }
