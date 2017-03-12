@@ -29,4 +29,12 @@ public class CheckoutTests {
 
         assertEquals(new Money(50), checkout.total());
     }
+
+    @Test
+    public void totalIs30WhenNoItemBIsScanned() {
+        Checkout checkout = new Checkout();
+        checkout.scan(new Item("B"));
+
+        assertEquals(new Money(30), checkout.total());
+    }
 }

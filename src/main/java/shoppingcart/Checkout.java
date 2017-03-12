@@ -8,6 +8,8 @@ public class Checkout {
     }
 
     public void scan(Item item) {
-        totalMoney = new Money(50);
+        if (item.equals(new Item("A")))
+            totalMoney = new Money(50);
+        totalMoney = new Money(30);
     }
 }

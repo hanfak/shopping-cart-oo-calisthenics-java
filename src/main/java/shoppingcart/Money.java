@@ -11,4 +11,9 @@ public class Money {
     public boolean equals(Object object) {
         return ((Money) object).amount == amount;
     }
+
+    @Override
+    public String toString(){
+        return String.valueOf(amount);
+    }
 }
