@@ -31,4 +31,11 @@ public class MoneyTests {
 
         assertEquals(new Money(25), moneyA);
     }
+//
+//    @Test
+//    public void valueOfMoney(){
+//        Money moneyA = new Money(0);
+//
+//        assertEquals("0", moneyA.toString());
+//    }
 }

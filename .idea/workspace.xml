@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fff87e2e-f267-4734-bd34-811f627ffff1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/shoppingcart/MoneyTests.class" afterPath="$PROJECT_DIR$/target/test-classes/shoppingcart/MoneyTests.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/CheckoutTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/CheckoutTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java" />
     </list>
     <ignored path="shopping-cart.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,6 +21,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart.coverage" NAME="All in shopping-cart Coverage Results" MODIFIED="1489352977982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping-cart$CheckoutTests.coverage" NAME="CheckoutTests Coverage Results" MODIFIED="1489468904728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>shoppingcart.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,7 +36,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+          <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/requirements.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="480">
@@ -42,11 +46,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CheckoutTests.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CheckoutTests.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/CheckoutTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="705">
+                  <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
                   <folding>
                     <element signature="e#1209#1210#0" expanded="true" />
                     <element signature="e#1254#1255#0" expanded="true" />
@@ -67,15 +71,25 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="MoneyTests.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="262">
+                  <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+                <state relative-caret-position="180">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
                     <element signature="e#245#246#0" expanded="true" />
                     <element signature="e#313#314#0" expanded="true" />
@@ -84,15 +98,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PricingRules.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PricingRules.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#460#461#0" expanded="true" />
-                    <element signature="e#505#506#0" expanded="true" />
+                    <element signature="e#188#189#0" expanded="true" />
+                    <element signature="e#219#220#0" expanded="true" />
+                    <element signature="e#681#682#0" expanded="true" />
+                    <element signature="e#726#727#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -101,8 +117,8 @@
           <file leaf-file-name="Money.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Money.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+                <state relative-caret-position="210">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="2" selection-end-line="21" selection-end-column="7" />
                   <folding>
                     <element signature="e#174#175#0" expanded="true" />
                     <element signature="e#216#217#0" expanded="true" />
@@ -162,13 +178,13 @@
         <option value="$PROJECT_DIR$/src/test/java/CheckoutTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/shoppingcart/ItemTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Total.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
-        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" />
         <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" />
         <option value="$PROJECT_DIR$/src/test/java/shoppingcart/CheckoutTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java" />
       </list>
     </option>
   </component>
@@ -289,32 +305,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="MoneyTests.addPriceOfItemToAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="shoppingcart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="shopping-cart" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="shoppingcart" />
-      <option name="MAIN_CLASS_NAME" value="shoppingcart.MoneyTests" />
-      <option name="METHOD_NAME" value="addPriceOfItemToAmount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="CheckoutTests.totalIs35WhenItemCandDAreScanned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -354,6 +344,32 @@
       <option name="PACKAGE_NAME" value="shoppingcart" />
       <option name="MAIN_CLASS_NAME" value="shoppingcart.CheckoutTests" />
       <option name="METHOD_NAME" value="totalIs30WhenNoItemBIsScanned" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MoneyTests.valueOfMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="shoppingcart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="shopping-cart" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="shoppingcart" />
+      <option name="MAIN_CLASS_NAME" value="shoppingcart.MoneyTests" />
+      <option name="METHOD_NAME" value="valueOfMoney" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -614,17 +630,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutTests" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in shopping-cart" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MoneyTests.addPriceOfItemToAmount" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs35WhenItemCandDAreScanned" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs30WhenNoItemBIsScanned" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs35WhenItemCandDAreScanned" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs30WhenNoItemBIsScanned" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MoneyTests.valueOfMoney" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CheckoutTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs35WhenItemCandDAreScanned" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs30WhenNoItemBIsScanned" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in shopping-cart" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MoneyTests.addPriceOfItemToAmount" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MoneyTests.valueOfMoney" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs35WhenItemCandDAreScanned" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CheckoutTests.totalIs30WhenNoItemBIsScanned" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in shopping-cart" />
       </list>
     </recent_temporary>
   </component>
@@ -651,26 +667,26 @@
     <history-entry file="CheckoutTests - 2017.03.14 at 05h 16m 46s.xml">
       <configuration name="CheckoutTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckoutTests_totalIs30WhenNoItemBIsScanned - 2017.03.14 at 05h 12m 46s.xml">
-      <configuration name="CheckoutTests.totalIs30WhenNoItemBIsScanned" configurationId="JUnit" />
+    <history-entry file="CheckoutTests - 2017.03.14 at 05h 18m 42s.xml">
+      <configuration name="CheckoutTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckoutTests_totalIs35WhenItemCandDAreScanned - 2017.03.14 at 05h 12m 28s.xml">
-      <configuration name="CheckoutTests.totalIs35WhenItemCandDAreScanned" configurationId="JUnit" />
+    <history-entry file="CheckoutTests - 2017.03.14 at 05h 20m 05s.xml">
+      <configuration name="CheckoutTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckoutTests_totalIs35WhenItemCandDAreScanned - 2017.03.14 at 05h 12m 34s.xml">
-      <configuration name="CheckoutTests.totalIs35WhenItemCandDAreScanned" configurationId="JUnit" />
+    <history-entry file="CheckoutTests - 2017.03.14 at 05h 21m 46s.xml">
+      <configuration name="CheckoutTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckoutTests_totalIs35WhenItemCandDAreScanned - 2017.03.14 at 05h 13m 15s.xml">
-      <configuration name="CheckoutTests.totalIs35WhenItemCandDAreScanned" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckoutTests_totalIs35WhenItemCandDAreScanned - 2017.03.14 at 05h 13m 25s.xml">
-      <configuration name="CheckoutTests.totalIs35WhenItemCandDAreScanned" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckoutTests_totalIs35WhenItemCandDAreScanned - 2017.03.14 at 05h 13m 51s.xml">
-      <configuration name="CheckoutTests.totalIs35WhenItemCandDAreScanned" configurationId="JUnit" />
+    <history-entry file="CheckoutTests - 2017.03.14 at 05h 24m 55s.xml">
+      <configuration name="CheckoutTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CheckoutTests_totalIs35WhenItemCandDAreScanned - 2017.03.14 at 05h 14m 15s.xml">
       <configuration name="CheckoutTests.totalIs35WhenItemCandDAreScanned" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoneyTests_valueOfMoney - 2017.03.14 at 05h 21m 33s.xml">
+      <configuration name="MoneyTests.valueOfMoney" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoneyTests_valueOfMoney - 2017.03.14 at 05h 22m 24s.xml">
+      <configuration name="MoneyTests.valueOfMoney" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -686,6 +702,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -700,7 +717,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -790,8 +806,10 @@
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -854,14 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Total.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Item.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -886,18 +896,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Money.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="2" selection-end-line="21" selection-end-column="7" />
           <folding>
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#216#217#0" expanded="true" />
@@ -907,37 +920,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-          <folding>
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/CheckoutTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="705">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#1209#1210#0" expanded="true" />
             <element signature="e#1254#1255#0" expanded="true" />
             <element signature="e#1290#1291#0" expanded="true" />
             <element signature="e#1351#1352#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/MoneyTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
