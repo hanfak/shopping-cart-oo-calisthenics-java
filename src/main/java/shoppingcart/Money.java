@@ -8,7 +8,7 @@ public class Money {
     }
 
     public void add(Money itemPrice) {
-        amount = itemPrice.amount;
+        amount += itemPrice.amount;
     }
 
     @Override

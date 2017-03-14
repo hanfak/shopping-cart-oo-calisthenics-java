@@ -9,6 +9,8 @@ public class PricingRules {
     public PricingRules() {
         pricingRules.put(new Item("A"), new Money(50));
         pricingRules.put(new Item("B"), new Money(30));
+        pricingRules.put(new Item("C"), new Money(20));
+        pricingRules.put(new Item("D"), new Money(15));
     }
 
     private Money findPrice(Item item) {

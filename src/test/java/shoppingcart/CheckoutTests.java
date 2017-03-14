@@ -5,11 +5,17 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 public class CheckoutTests {
+    public static final String A = "A";
+    public static final String B = "B";
+    public static final String C = "C";
+    public static final String D = "D";
     private Checkout checkout;
 
     @Test
     public void totalIs0WhenNoItemIsScanned() {
         givenACheckoutSystemIsActive();
+
+        whenNoItemIsScanned();
         
         thenTotalWillBe0();
     }
@@ -18,7 +24,7 @@ public class CheckoutTests {
     public void totalIs50WhenNoItemAIsScanned() {
         givenACheckoutSystemIsActive();
 
-        whenItemAisScanned();
+        whenItemisScanned(A);
 
         thenTotalIs50();
     }
@@ -27,13 +33,34 @@ public class CheckoutTests {
     public void totalIs30WhenNoItemBIsScanned() {
         givenACheckoutSystemIsActive();
 
-        whenItemBIsScanned();
+        whenItemisScanned(B);
 
         thenTotalIs30();
     }
-    
+
+    @Test
+    public void totalIs35WhenItemCandDAreScanned() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(C);
+        whenItemisScanned(D);
+
+        thenTotalIs35();
+    }
+
     private void givenACheckoutSystemIsActive() {
         checkout = new Checkout();
+    }
+
+    private void whenNoItemIsScanned() {
+    }
+
+    private void whenItemisScanned(String item) {
+        checkout.scan(new Item(item));
+    }
+
+    private void thenTotalIs35() {
+        assertEquals(new Money(35), checkout.total());
     }
 
     private void thenTotalWillBe0() {
@@ -44,20 +71,10 @@ public class CheckoutTests {
         assertEquals(new Money(50), checkout.total());
     }
 
-    private void whenItemAisScanned() {
-        checkout.scan(new Item("A"));
-    }
-
     private void thenTotalIs30() {
         assertEquals(new Money(30), checkout.total());
     }
 
-    private void whenItemBIsScanned() {
-        checkout.scan(new Item("B"));
-    }
-
-
-    //test multiple different no discount
     //test multiple same item with discount
     //test multiple other item different discount
     //test mulitple items with and without discounts
