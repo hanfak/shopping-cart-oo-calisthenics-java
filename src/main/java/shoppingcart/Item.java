@@ -16,4 +16,9 @@ public class Item {
     public int hashCode(){
         return item.hashCode();
     }
+
+    @Override
+    public String toString(){
+        return String.valueOf(item);
+    }
 }

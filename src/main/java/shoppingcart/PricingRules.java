@@ -1,18 +1,26 @@
 package shoppingcart;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PricingRules {
     private Map<Item, Money> pricingRules = new HashMap<>();
+    private List<Item> itemsScanned = new ArrayList<>();
 
     public PricingRules() {
         setItemPrices();
     }
-
-    public void addScannedItemToTotal(Item item, Money totalMoney) {
-        Money itemPrice = findPrice(item);
-        totalMoney.add(itemPrice);
+    //TODO extract itemsScanned to new class
+    // TODO test
+    public Money addScannedItemToTotal(Money totalMoney) {
+        itemsScanned.stream().map(this::findPrice).forEach(totalMoney::add);
+        return totalMoney;
+    }
+    //TODO test
+    public void addScannedItemToBasket(Item item) {
+        itemsScanned.add(item);
     }
 
     private void setItemPrices() {

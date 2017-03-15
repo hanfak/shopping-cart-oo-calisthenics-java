@@ -16,8 +16,8 @@ public class CheckoutTests {
         givenACheckoutSystemIsActive();
 
         whenNoItemIsScanned();
-        
-        thenTotalWillBe0();
+
+        thenTotalIs(0);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class CheckoutTests {
 
         whenItemisScanned(A);
 
-        thenTotalIs50();
+        thenTotalIs(50);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class CheckoutTests {
 
         whenItemisScanned(B);
 
-        thenTotalIs30();
+        thenTotalIs(30);
     }
 
     @Test
@@ -45,7 +45,22 @@ public class CheckoutTests {
         whenItemisScanned(C);
         whenItemisScanned(D);
 
-        thenTotalIs35();
+        thenTotalIs(35);
+    }
+
+    @Test
+    public void totalIs130WhenItemAIsScanned3TimesAndDiscountIsApplied() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+
+        thenTotalIs(130);
+    }
+
+    private void thenTotalIs(int price) {
+        assertEquals(new Money(price), checkout.total());
     }
 
     private void givenACheckoutSystemIsActive() {
@@ -59,21 +74,21 @@ public class CheckoutTests {
         checkout.scan(new Item(item));
     }
 
-    private void thenTotalIs35() {
-        assertEquals(new Money(35), checkout.total());
-    }
-
-    private void thenTotalWillBe0() {
-        assertEquals(new Money(0), checkout.total());
-    }
-
-    private void thenTotalIs50() {
-        assertEquals(new Money(50), checkout.total());
-    }
-
-    private void thenTotalIs30() {
-        assertEquals(new Money(30), checkout.total());
-    }
+//    private void thenTotalIs35() {
+//        assertEquals(new Money(35), checkout.total());
+//    }
+//
+//    private void thenTotalWillBe0() {
+//        assertEquals(new Money(0), checkout.total());
+//    }
+//
+//    private void thenTotalIs50() {
+//        assertEquals(new Money(50), checkout.total());
+//    }
+//
+//    private void thenTotalIs30() {
+//        assertEquals(new Money(30), checkout.total());
+//    }
 
     //test multiple same item with discount
     //test multiple other item different discount

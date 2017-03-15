@@ -16,8 +16,8 @@ public class Money {
         return ((Money) object).amount == amount;
     }
 
-//    @Override
-//    public String toString(){
-//        return String.valueOf(amount);
-//    }
+    @Override
+    public String toString(){
+        return String.valueOf(amount);
+    }
 }
