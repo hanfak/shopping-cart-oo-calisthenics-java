@@ -1,6 +1,7 @@
-package shoppingcart;
+package shoppingcart.unittests;
 
 import org.junit.Test;
+import shoppingcart.Item;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

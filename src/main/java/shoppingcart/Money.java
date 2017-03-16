@@ -7,9 +7,14 @@ public class Money {
         this.amount = amount;
     }
 
+    // create new money object with new add amount, keep immutable
+    // new class Adder???
     public void add(Money itemPrice) {
         amount += itemPrice.amount;
     }
+//    public Money add(Money itemPrice) {
+//        return new Money(amount + itemPrice.amount);
+//    }
 
     @Override
     public boolean equals(Object object) {

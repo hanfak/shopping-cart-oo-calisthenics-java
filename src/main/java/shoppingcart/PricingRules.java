@@ -14,16 +14,19 @@ public class PricingRules {
     }
     //TODO extract itemsScanned to new class
     // TODO test
+    // Move to scanner class
     public Money addScannedItemToTotal(Money totalMoney) {
         itemsScanned.stream().map(this::findPrice).forEach(totalMoney::add);
         return totalMoney;
     }
     //TODO test
+    // Move to scanner class
     public void addScannedItemToBasket(Item item) {
         itemsScanned.add(item);
     }
 
     private void setItemPrices() {
+        // Class ProductList???
         pricingRules.put(new Item("A"), new Money(50));
         pricingRules.put(new Item("B"), new Money(30));
         pricingRules.put(new Item("C"), new Money(20));

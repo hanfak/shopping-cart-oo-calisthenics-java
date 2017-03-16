@@ -1,18 +1,19 @@
 package shoppingcart;
 
 public class Checkout {
-    private Money totalMoney = new Money(0);
-    //TODO inject
-    private PricingRules pricingRules = new PricingRules();
+    private Money totalMoney;
+    private PricingRules pricingRules;
+
+    public Checkout(Money totalMoney, PricingRules pricingRules) {
+        this.totalMoney = totalMoney;
+        this.pricingRules = pricingRules;
+    }
 
     public Money total(){
-        //return items.total(pricingrules);
         return pricingRules.addScannedItemToTotal(totalMoney);
     }
 
-
     public void scan(Item item) {
-        //items.scan(item)
         pricingRules.addScannedItemToBasket(item);
     }
 }

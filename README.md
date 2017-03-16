@@ -1,4 +1,8 @@
- Rules
+ # Rules
+
+ See
+
+ http://codekata.com/kata/kata09-back-to-the-checkout/
 
   Item   Unit      Special
          Price     Price
@@ -8,7 +12,7 @@
     C     20
     D     15
 
-Interface
+# Interface
 
     co = CheckOut.new(pricing_rules)
     co.scan(item)
@@ -17,7 +21,7 @@ Interface
     price = co.total
 
 
-Code rules
+# Code rules
 
     The app must be created using the "Object Calisthenics" methodology by Jeff Bay
 
@@ -32,7 +36,7 @@ Code rules
     No getters/setters/properties
 
 
-Process
+# Process
 
     Apply TDD
 

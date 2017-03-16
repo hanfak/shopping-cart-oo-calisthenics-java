@@ -1,6 +1,7 @@
-package shoppingcart;
+package shoppingcart.unittests;
 
 import org.junit.Test;
+import shoppingcart.Money;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertFalse;
