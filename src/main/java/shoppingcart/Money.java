@@ -19,7 +19,6 @@ public class Money {
 //        return new Money(newAmount);
 //    }
 
-    // TODO test
     public void discount(Money discountPrice) {
          amount -= discountPrice.amount;
     }
@@ -34,5 +33,4 @@ public class Money {
     public String toString(){
         return String.valueOf(amount);
     }
-
 }

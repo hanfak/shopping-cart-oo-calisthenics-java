@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class PricingRules {
     private static final int NUMBER_OF_A_ITEMS_FOR_DISCOUNT = 3;
     private static final Money DISCOUNT_FOR_A = new Money(20);
+    private static final int NUMBER_OF_B_ITEMS_FOR_DISCOUNT = 2;
+    private static final Money DISCOUNT_FOR_B = new Money(15);
 
     private Map<Item, Money> pricingRules = new HashMap<>();
     private List<Item> itemsScanned = new ArrayList<>();
@@ -22,18 +22,9 @@ public class PricingRules {
     // Move to scanner class
     public Money addScannedItemToTotal() {
         Money totalMoney = new Money(0);
-        itemsScanned.stream().map(this::findPrice).forEach(totalMoney::add); //one dot per line for chaining object methods or includes functional aspect
+        itemsScanned.stream().map(this::findPrice).forEach(totalMoney::add);
         return discountTotal(totalMoney);
     }
-
-//    public Money addScannedItemToTotal() {
-//        Money totalMoney = new Money(0);
-//        Stream<Money> list = itemsScanned.stream().map(this::findPrice);
-//        ArrayList<Money> a = list.map(add).collect(Collectors.toCollection(ArrayList::new));
-//        System.out.println(a.get(0));
-//        System.out.println(a.get(1));
-//        return discountTotal(a.get(a.size()-1));
-//    }
 
     // Move to scanner class
     public void addScannedItemToBasket(Item item) {
@@ -55,6 +46,9 @@ public class PricingRules {
         if(numberOfAItemsInScannedList() == NUMBER_OF_A_ITEMS_FOR_DISCOUNT) {
             grossTotal.discount(DISCOUNT_FOR_A);
         }
+        if(numberOfBItemsInScannedList() == NUMBER_OF_B_ITEMS_FOR_DISCOUNT) {
+            grossTotal.discount(DISCOUNT_FOR_B);
+        }
         return grossTotal;
     }
 
@@ -63,6 +57,9 @@ public class PricingRules {
         return itemsScanned.stream().filter(p -> p.equals(new Item("A"))).count();
     }
 
+    private long numberOfBItemsInScannedList() {
+        return itemsScanned.stream().filter(p -> p.equals(new Item("B"))).count();
+    }
 }
 
 // Go throuh each item in itemsScanned, count the number of groups of A (%3)

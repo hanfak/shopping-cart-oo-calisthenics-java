@@ -64,7 +64,6 @@ public class ShoppingCartTests {
         thenTotalIs35();
     }
 
-//    @Ignore
     @Test
     public void totalIs130WhenItemAIsScanned3TimesAndDiscountIsApplied() {
         givenACheckoutSystemIsActive();
@@ -74,6 +73,16 @@ public class ShoppingCartTests {
         whenItemisScanned(A);
 
         thenTotalIs(130);
+    }
+
+    @Test
+    public void totalIs45WhenItemBIsScanned2TimesAndDiscountIsApplied() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(B);
+        whenItemisScanned(B);
+
+        thenTotalIs(45);
     }
 
     private void givenACheckoutSystemIsActive() {
@@ -98,9 +107,8 @@ public class ShoppingCartTests {
 
 
 
-    //test multiple same item with discount
-    //test multiple other item different discount
-    //test 4 A or 2 B
+    //test 4 A or 3 B
+    // test 6A or 4B
     //test mulitple items with and without discounts
     // Error checking
         // Item not in stock
