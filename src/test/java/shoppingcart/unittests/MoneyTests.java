@@ -5,6 +5,7 @@ import shoppingcart.Money;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertFalse;
+import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class MoneyTests {
@@ -31,6 +32,15 @@ public class MoneyTests {
         moneyA.add(new Money(25));
 
         assertEquals(new Money(25), moneyA);
+    }
+
+    @Test
+    public void discountPriceOfItem() {
+        Money money = new Money(50);
+
+        money.discount(new Money(20));
+
+        assertThat(money.equals(new Money(30)));
     }
 //
 //    @Test

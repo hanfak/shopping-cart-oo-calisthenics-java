@@ -20,7 +20,7 @@ public class CheckoutTests {
     private Item itemA = mock(Item.class);
     private PricingRules rules = mock(PricingRules.class);
     private Money total = mock(Money.class);
-    private Checkout checkout = new Checkout(total, rules);
+    private Checkout checkout = new Checkout(rules);
 
 
     @Test
@@ -34,6 +34,6 @@ public class CheckoutTests {
     public void totalOfAllItemsIsAskedFor() {
         checkout.total();
 
-        verify(rules).addScannedItemToTotal(total);
+        verify(rules).addScannedItemToTotal();
     }
 }

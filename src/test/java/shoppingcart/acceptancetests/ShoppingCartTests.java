@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static java.lang.String.valueOf;
+import static junit.framework.TestCase.assertEquals;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import shoppingcart.Checkout;
@@ -63,7 +64,7 @@ public class ShoppingCartTests {
         thenTotalIs35();
     }
 
-    @Ignore
+//    @Ignore
     @Test
     public void totalIs130WhenItemAIsScanned3TimesAndDiscountIsApplied() {
         givenACheckoutSystemIsActive();
@@ -76,7 +77,7 @@ public class ShoppingCartTests {
     }
 
     private void givenACheckoutSystemIsActive() {
-        checkout = new Checkout(new Money(0), new PricingRules());
+        checkout = new Checkout(new PricingRules());
     }
 
     private void whenNoItemIsScanned() {
@@ -87,7 +88,7 @@ public class ShoppingCartTests {
     }
 
     private void thenTotalIs(int price) {
-        TestCase.assertEquals(new Money(price), checkout.total());
+        assertEquals(new Money(price), checkout.total());
     }
 
     private void thenTotalIs35() {
@@ -99,6 +100,7 @@ public class ShoppingCartTests {
 
     //test multiple same item with discount
     //test multiple other item different discount
+    //test 4 A or 2 B
     //test mulitple items with and without discounts
     // Error checking
         // Item not in stock

@@ -1,16 +1,14 @@
 package shoppingcart;
 
 public class Checkout {
-    private Money totalMoney;
     private PricingRules pricingRules;
 
-    public Checkout(Money totalMoney, PricingRules pricingRules) {
-        this.totalMoney = totalMoney;
+    public Checkout(PricingRules pricingRules) {
         this.pricingRules = pricingRules;
     }
 
     public Money total(){
-        return pricingRules.addScannedItemToTotal(totalMoney);
+        return pricingRules.addScannedItemToTotal();
     }
 
     public void scan(Item item) {
