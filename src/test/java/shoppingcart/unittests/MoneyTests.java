@@ -29,7 +29,7 @@ public class MoneyTests {
     public void addPriceOfItemToAmount(){
         Money moneyA = new Money(0);
 
-        moneyA.add(new Money(25));
+        moneyA.addItemPrice(new Money(25));
 
         assertEquals(new Money(25), moneyA);
     }
@@ -42,11 +42,11 @@ public class MoneyTests {
 
         assertThat(money.equals(new Money(30)));
     }
-//
-//    @Test
-//    public void valueOfMoney(){
-//        Money moneyA = new Money(0);
-//
-//        assertEquals("0", moneyA.toString());
-//    }
+
+    @Test
+    public void valueOfMoney(){
+        Money moneyA = new Money(0);
+
+        assertEquals("0", moneyA.toString());
+    }
 }

@@ -17,7 +17,6 @@ public class Item {
         return item.hashCode();
     }
 
-    //Not tested - used for clearer test message when failing
     @Override
     public String toString(){
         return String.valueOf(item);

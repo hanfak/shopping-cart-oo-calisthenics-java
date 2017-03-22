@@ -7,9 +7,7 @@ public class Money {
         this.amount = amount;
     }
 
-    // create new money object with new add amount, keep immutable
-    // new class Adder???
-    public void add(Money itemPrice) {
+    public void addItemPrice(Money itemPrice) {
         amount += itemPrice.amount;
     }
 
@@ -28,7 +26,6 @@ public class Money {
         return ((Money) object).amount == amount;
     }
 
-    //Not Tested
     @Override
     public String toString(){
         return String.valueOf(amount);

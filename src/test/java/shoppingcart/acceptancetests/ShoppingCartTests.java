@@ -1,22 +1,13 @@
 package shoppingcart.acceptancetests;
 
 import com.googlecode.yatspec.junit.SpecRunner;
-import junit.framework.TestCase;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static java.lang.String.valueOf;
 import static junit.framework.TestCase.assertEquals;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import shoppingcart.Checkout;
-import shoppingcart.Item;
-import shoppingcart.Money;
-import shoppingcart.PricingRules;
-
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import shoppingcart.*;
 
 @RunWith(SpecRunner.class)
 public class ShoppingCartTests {
@@ -24,8 +15,8 @@ public class ShoppingCartTests {
     public static final String B = "B";
     public static final String C = "C";
     public static final String D = "D";
-    private Checkout checkout;
 
+    private Checkout checkout;
 
     @Test
     public void totalIs0WhenNoItemIsScanned() {
@@ -86,7 +77,7 @@ public class ShoppingCartTests {
     }
 
     private void givenACheckoutSystemIsActive() {
-        checkout = new Checkout(new PricingRules());
+        checkout = new Checkout(new PricingRules(new Scanner()));
     }
 
     private void whenNoItemIsScanned() {

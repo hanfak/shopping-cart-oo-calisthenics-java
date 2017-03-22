@@ -1,14 +1,11 @@
 package shoppingcart.unittests;
 
-import junit.framework.TestCase;
-import org.junit.Ignore;
 import org.junit.Test;
 import shoppingcart.Checkout;
 import shoppingcart.Item;
 import shoppingcart.Money;
 import shoppingcart.PricingRules;
 
-import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -22,12 +19,11 @@ public class CheckoutTests {
     private Money total = mock(Money.class);
     private Checkout checkout = new Checkout(rules);
 
-
     @Test
     public void itemIsScanned() {
         checkout.scan(itemA);
 
-        verify(rules).addScannedItemToBasket(itemA);
+        verify(rules).addScannedItem(itemA);
     }
 
     @Test

@@ -12,15 +12,6 @@ public class Checkout {
     }
 
     public void scan(Item item) {
-        pricingRules.addScannedItemToBasket(item);
+        pricingRules.addScannedItem(item);
     }
 }
-
-/*
-* class items
-*
-*
-*
-*
-*
-* */

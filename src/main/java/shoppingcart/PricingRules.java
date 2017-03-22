@@ -1,8 +1,6 @@
 package shoppingcart;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class PricingRules {
@@ -12,23 +10,21 @@ public class PricingRules {
     private static final Money DISCOUNT_FOR_B = new Money(15);
 
     private Map<Item, Money> pricingRules = new HashMap<>();
-    private List<Item> itemsScanned = new ArrayList<>();
+    private Scanner scanner;
 
-    public PricingRules() {
+    public PricingRules(Scanner scanner) {
+        this.scanner = scanner;
         setItemPrices();
     }
 
-    //TODO extract itemsScanned to new class
-    // Move to scanner class
     public Money addScannedItemToTotal() {
         Money totalMoney = new Money(0);
-        itemsScanned.stream().map(this::findPrice).forEach(totalMoney::add);
+        scanner.scannedItems().stream().map(this::findPrice).forEach(totalMoney::addItemPrice);
         return discountTotal(totalMoney);
     }
 
-    // Move to scanner class
-    public void addScannedItemToBasket(Item item) {
-        itemsScanned.add(item);
+    public void addScannedItem(Item item) {
+        scanner.scanAnItem(item);
     }
 
     private void setItemPrices() {
@@ -43,22 +39,13 @@ public class PricingRules {
     }
 
     private Money discountTotal(Money grossTotal) {
-        if(numberOfAItemsInScannedList() == NUMBER_OF_A_ITEMS_FOR_DISCOUNT) {
+        if (scanner.findItemInScannedItems(new Item("A")) == NUMBER_OF_A_ITEMS_FOR_DISCOUNT) {
             grossTotal.discount(DISCOUNT_FOR_A);
         }
-        if(numberOfBItemsInScannedList() == NUMBER_OF_B_ITEMS_FOR_DISCOUNT) {
+        if (scanner.findItemInScannedItems(new Item("B")) == NUMBER_OF_B_ITEMS_FOR_DISCOUNT) {
             grossTotal.discount(DISCOUNT_FOR_B);
         }
         return grossTotal;
-    }
-
-    // TODO Move to Scanner class
-    private long numberOfAItemsInScannedList() {
-        return itemsScanned.stream().filter(p -> p.equals(new Item("A"))).count();
-    }
-
-    private long numberOfBItemsInScannedList() {
-        return itemsScanned.stream().filter(p -> p.equals(new Item("B"))).count();
     }
 }
 
