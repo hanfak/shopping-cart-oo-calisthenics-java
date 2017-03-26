@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fff87e2e-f267-4734-bd34-811f627ffff1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/shoppingcart/Checkout.class" afterPath="$PROJECT_DIR$/target/classes/shoppingcart/Checkout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/shoppingcart/Item.class" afterPath="$PROJECT_DIR$/target/classes/shoppingcart/Item.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/Item.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/CheckoutTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/CheckoutTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java" />
     </list>
     <ignored path="shopping-cart.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,12 +27,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart.coverage" NAME="All in shopping-cart Coverage Results" MODIFIED="1489352977982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/shopping-cart$CheckoutTests.coverage" NAME="CheckoutTests Coverage Results" MODIFIED="1489468904728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>shoppingcart.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart__1_.coverage" NAME="All in shopping-cart (1) Coverage Results" MODIFIED="1489913922723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart__2_.coverage" NAME="All in shopping-cart (2) Coverage Results" MODIFIED="1490192661764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart.coverage" NAME="All in shopping-cart Coverage Results" MODIFIED="1490526849108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart__1_.coverage" NAME="All in shopping-cart (1) Coverage Results" MODIFIED="1490433458870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart__2_.coverage" NAME="All in shopping-cart (2) Coverage Results" MODIFIED="1490462494351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping-cart$ItemPricesTest.coverage" NAME="ItemPricesTest Coverage Results" MODIFIED="1490462472360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>shoppingcart.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/shopping-cart$All_in_shopping_cart__3_.coverage" NAME="All in shopping-cart (3) Coverage Results" MODIFIED="1490194338140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -46,28 +46,28 @@
     <favorites_list name="shopping-cart" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5007153">
+    <splitter split-orientation="horizontal" split-proportion="0.481402">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ItemTests.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java">
+          <file leaf-file-name="TotalCalculatorTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/TotalCalculatorTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-                  <folding />
+                <state relative-caret-position="3">
+                  <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ShoppingCartTests.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ShoppingCartTests.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1185">
-                  <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+                <state relative-caret-position="570">
+                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1736#1737#0" expanded="true" />
-                    <element signature="e#1808#1809#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -76,8 +76,20 @@
           <file leaf-file-name="CheckoutTests.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/CheckoutTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ItemTests.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -86,8 +98,18 @@
           <file leaf-file-name="MoneyTests.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="382">
-                  <caret line="46" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
+                <state relative-caret-position="3">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ItemPricesTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemPricesTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3">
+                  <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -98,8 +120,8 @@
           <file leaf-file-name="PricingRulesTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+                <state relative-caret-position="-161">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -110,8 +132,20 @@
           <file leaf-file-name="ScannerTests.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+                <state relative-caret-position="171">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ScannedItemsTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannedItemsTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -126,9 +160,47 @@
           <file leaf-file-name="Checkout.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-                  <folding />
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#310#311#0" expanded="true" />
+                    <element signature="e#377#378#0" expanded="true" />
+                    <element signature="e#405#406#0" expanded="true" />
+                    <element signature="e#467#468#0" expanded="true" />
+                    <element signature="e#502#503#0" expanded="true" />
+                    <element signature="e#542#543#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ScannedItems.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/ScannedItems.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#234#235#0" expanded="true" />
+                    <element signature="e#272#273#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#156#157#0" expanded="true" />
+                    <element signature="e#204#205#0" expanded="true" />
+                    <element signature="e#245#246#0" expanded="true" />
+                    <element signature="e#289#290#0" expanded="true" />
+                    <element signature="e#603#604#0" expanded="true" />
+                    <element signature="e#684#685#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -136,11 +208,9 @@
           <file leaf-file-name="PricingRules.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="-158">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -148,41 +218,48 @@
           <file leaf-file-name="Money.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Money.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#183#184#0" expanded="true" />
+                    <element signature="e#225#226#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ItemPrices.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/ItemPrices.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#212#213#0" expanded="true" />
+                    <element signature="e#254#255#0" expanded="true" />
+                    <element signature="e#295#296#0" expanded="true" />
+                    <element signature="e#337#338#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Item.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Item.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Item.java">
+          <file leaf-file-name="TotalCalculator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/TotalCalculator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#364#365#0" expanded="true" />
-                    <element signature="e#407#408#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#213#214#0" expanded="true" />
-                    <element signature="e#251#252#0" expanded="true" />
-                    <element signature="e#337#338#0" expanded="true" />
-                    <element signature="e#372#373#0" expanded="true" />
-                    <element signature="e#425#426#0" expanded="true" />
-                    <element signature="e#505#506#0" expanded="true" />
-                    <element signature="e#561#562#0" expanded="true" />
-                    <element signature="e#603#604#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -195,8 +272,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -227,20 +304,29 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/shoppingcart/PricingRulesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Scanner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/Scanner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/CheckoutTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" />
         <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/ItemPrices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Money.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/ItemPricesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/TotalCalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/ScannedItemsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/TotalCalculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/CheckoutTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemPricesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/TotalCalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannedItemsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/ScannedItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java" />
       </list>
     </option>
   </component>
@@ -255,6 +341,9 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -286,87 +375,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopping-cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shoppingcart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,6 +394,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="prop_add_unversioned_files" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -396,7 +411,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in shopping-cart (3)">
+  <component name="RunManager" selected="JUnit.All in shopping-cart">
     <configuration default="false" name="All in shopping-cart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="shopping-cart" />
@@ -418,7 +433,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ScannerTests.findNumberOfItemsAlreadyScanned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ScannerTests.retrievesPricesOfScannedItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="shoppingcart.unittests.*" />
@@ -430,7 +445,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="shoppingcart.unittests" />
       <option name="MAIN_CLASS_NAME" value="shoppingcart.unittests.ScannerTests" />
-      <option name="METHOD_NAME" value="findNumberOfItemsAlreadyScanned" />
+      <option name="METHOD_NAME" value="retrievesPricesOfScannedItem" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -444,28 +459,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="All in shopping-cart (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="shopping-cart" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ItemTests.valueOfMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ScannerTests.findNumberOfItemsAlreadyScannedAAA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="shoppingcart.unittests.*" />
@@ -476,8 +470,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="shoppingcart.unittests" />
-      <option name="MAIN_CLASS_NAME" value="shoppingcart.unittests.ItemTests" />
-      <option name="METHOD_NAME" value="valueOfMoney" />
+      <option name="MAIN_CLASS_NAME" value="shoppingcart.unittests.ScannerTests" />
+      <option name="METHOD_NAME" value="findNumberOfItemsAlreadyScannedAAA" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -491,15 +485,46 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="All in shopping-cart (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="false" name="ScannedItemsTest.storeItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="shoppingcart.unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="shopping-cart" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="shoppingcart.unittests" />
+      <option name="MAIN_CLASS_NAME" value="shoppingcart.unittests.ScannedItemsTest" />
+      <option name="METHOD_NAME" value="storeItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScannedItemsTest.replaceItemsWithItsPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="shoppingcart.unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="shopping-cart" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="shoppingcart.unittests" />
+      <option name="MAIN_CLASS_NAME" value="shoppingcart.unittests.ScannedItemsTest" />
+      <option name="METHOD_NAME" value="replaceItemsWithItsPrice" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -758,18 +783,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in shopping-cart" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ScannerTests.findNumberOfItemsAlreadyScanned" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in shopping-cart (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTests.valueOfMoney" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in shopping-cart (3)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ScannerTests.retrievesPricesOfScannedItem" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ScannerTests.findNumberOfItemsAlreadyScannedAAA" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ScannedItemsTest.storeItems" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ScannedItemsTest.replaceItemsWithItsPrice" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in shopping-cart (3)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in shopping-cart" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTests.valueOfMoney" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in shopping-cart (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ScannerTests.findNumberOfItemsAlreadyScanned" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in shopping-cart" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ScannedItemsTest.replaceItemsWithItsPrice" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ScannedItemsTest.storeItems" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ScannerTests.findNumberOfItemsAlreadyScannedAAA" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ScannerTests.retrievesPricesOfScannedItem" />
       </list>
     </recent_temporary>
   </component>
@@ -787,58 +812,58 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shopping-cart - 2017.03.22 at 14h 52m 09s.xml">
+    <history-entry file="All_in_shopping-cart - 2017.03.26 at 11h 33m 56s.xml">
       <configuration name="All in shopping-cart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shopping-cart_(1) - 2017.03.22 at 14h 40m 20s.xml">
-      <configuration name="All in shopping-cart (1)" configurationId="JUnit" />
+    <history-entry file="All_in_shopping-cart - 2017.03.26 at 12h 12m 12s.xml">
+      <configuration name="All in shopping-cart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shopping-cart_(1) - 2017.03.22 at 14h 44m 32s.xml">
-      <configuration name="All in shopping-cart (1)" configurationId="JUnit" />
+    <history-entry file="All_in_shopping-cart - 2017.03.26 at 12h 14m 13s.xml">
+      <configuration name="All in shopping-cart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shopping-cart_(1) - 2017.03.22 at 14h 49m 19s.xml">
-      <configuration name="All in shopping-cart (1)" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_replaceItemsWithItsPrice - 2017.03.26 at 12h 11m 38s.xml">
+      <configuration name="ScannedItemsTest.replaceItemsWithItsPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shopping-cart_(3) - 2017.03.22 at 14h 52m 22s.xml">
-      <configuration name="All in shopping-cart (3)" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_storeItems - 2017.03.26 at 11h 40m 55s.xml">
+      <configuration name="ScannedItemsTest.storeItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTests_valueOfMoney - 2017.03.22 at 14h 51m 59s.xml">
-      <configuration name="ItemTests.valueOfMoney" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_storeItems - 2017.03.26 at 11h 41m 10s.xml">
+      <configuration name="ScannedItemsTest.storeItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScannerTests_findNumberOfItemsAlreadyScanned - 2017.03.22 at 14h 38m 50s.xml">
-      <configuration name="ScannerTests.findNumberOfItemsAlreadyScanned" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_storeItems - 2017.03.26 at 11h 41m 45s.xml">
+      <configuration name="ScannedItemsTest.storeItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScannerTests_findNumberOfItemsAlreadyScanned - 2017.03.22 at 14h 38m 59s.xml">
-      <configuration name="ScannerTests.findNumberOfItemsAlreadyScanned" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_storeItems - 2017.03.26 at 11h 42m 06s.xml">
+      <configuration name="ScannedItemsTest.storeItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScannerTests_findNumberOfItemsAlreadyScanned - 2017.03.22 at 14h 39m 08s.xml">
-      <configuration name="ScannerTests.findNumberOfItemsAlreadyScanned" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_storeItems - 2017.03.26 at 11h 42m 42s.xml">
+      <configuration name="ScannedItemsTest.storeItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScannerTests_findNumberOfItemsAlreadyScanned - 2017.03.22 at 14h 40m 12s.xml">
-      <configuration name="ScannerTests.findNumberOfItemsAlreadyScanned" configurationId="JUnit" />
+    <history-entry file="ScannedItemsTest_storeItems - 2017.03.26 at 11h 42m 52s.xml">
+      <configuration name="ScannedItemsTest.storeItems" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3113325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2267525" sideWeight="0.47709924" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2267525" sideWeight="0.47709924" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39820743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2267525" sideWeight="0.52290076" order="2" side_tool="true" content_ui="tabs" />
@@ -889,7 +914,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="27" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -898,70 +923,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Money.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
           <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -970,7 +937,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -978,9 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,7 +964,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,9 +979,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +1007,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1046,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,8 +1025,6 @@
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1066,7 +1033,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,9 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1091,7 +1057,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,9 +1072,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,7 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,7 +1106,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,7 +1121,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1152,9 +1131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1192,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scanner.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="233">
@@ -1225,65 +1215,21 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/CheckoutTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+        <state relative-caret-position="180">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemPricesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="46" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="3">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1292,41 +1238,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ItemTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Money.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/MoneyTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="3">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/PricingRulesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="-161">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/TotalCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="3">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/unittests/ScannedItemsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shoppingcart/acceptancetests/ShoppingCartTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1335,19 +1304,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Checkout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/ItemPrices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Money.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/ScannedItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/TotalCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/PricingRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingcart/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
           </folding>
         </state>
       </provider>

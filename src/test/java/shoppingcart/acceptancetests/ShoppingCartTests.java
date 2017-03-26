@@ -1,6 +1,7 @@
 package shoppingcart.acceptancetests;
 
 import com.googlecode.yatspec.junit.SpecRunner;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -37,15 +38,6 @@ public class ShoppingCartTests {
     }
 
     @Test
-    public void totalIs30WhenNoItemBIsScanned() {
-        givenACheckoutSystemIsActive();
-
-        whenItemisScanned(B);
-
-        thenTotalIs(30);
-    }
-
-    @Test
     public void totalIs35WhenItemCandDAreScanned() {
         givenACheckoutSystemIsActive();
 
@@ -67,17 +59,65 @@ public class ShoppingCartTests {
     }
 
     @Test
-    public void totalIs45WhenItemBIsScanned2TimesAndDiscountIsApplied() {
+    @Ignore
+    public void totalIs180WhenDiscountAppliedOnce() {
         givenACheckoutSystemIsActive();
 
-        whenItemisScanned(B);
-        whenItemisScanned(B);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
 
-        thenTotalIs(45);
+        thenTotalIs(180);
+    }
+
+    @Test
+    @Ignore
+    public void totalIs260WhenDiscountAppliedTwice() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+        whenItemisScanned(A);
+
+        thenTotalIs(260);
+    }
+
+    @Test
+    @Ignore
+    public void totalIs175WhenMultipeDiscountAppliedForDifferentItems() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(A);
+        whenItemisScanned(B);
+        whenItemisScanned(A);
+        whenItemisScanned(B);
+        whenItemisScanned(A);
+
+        thenTotalIs(175);
+    }
+
+    @Test
+    @Ignore
+    public void totalIs210WhenGeneralMixOfItemsScanned() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(A);
+        whenItemisScanned(C);
+        whenItemisScanned(B);
+        whenItemisScanned(A);
+        whenItemisScanned(D);
+        whenItemisScanned(B);
+        whenItemisScanned(A);
+
+        thenTotalIs(210);
     }
 
     private void givenACheckoutSystemIsActive() {
-        checkout = new Checkout(new PricingRules(new Scanner()));
+        checkout = new Checkout(new PricingRules(new ItemPrices(), new TotalCalculator()));
     }
 
     private void whenNoItemIsScanned() {

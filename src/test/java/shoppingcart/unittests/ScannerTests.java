@@ -1,31 +1,31 @@
 package shoppingcart.unittests;
 
 import org.junit.Test;
-import shoppingcart.Item;
+import shoppingcart.*;
 import shoppingcart.Scanner;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class ScannerTests {
     @Test
-    public void scanAnItem() {
-        Scanner scanner = new Scanner();
-        Item itemA = new Item("A");
+    public void retrievesPricesOfScannedItem() {
+        ScannedItems scannedItems = mock(ScannedItems.class);
+        Scanner scanner = new Scanner(scannedItems);
+        ItemPrices itemPrices = mock(ItemPrices.class);
 
-        scanner.scanAnItem(itemA);
+        scanner.retrievePricesOfScannedItems(itemPrices);
 
-        assertThat(scanner.scannedItems().get(0).equals(itemA));
+        verify(scannedItems).findPricesOfScannedItems(itemPrices);
     }
 
     @Test
     public void findNumberOfItemsAlreadyScanned() {
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(new ScannedItems());
         long expectedNumberOfItemsAScanned = 2;
         Item itemA = new Item("A");
         Item itemB = new Item("B");
@@ -35,6 +35,20 @@ public class ScannerTests {
         scanner.scanAnItem(itemB);
         scanner.scanAnItem(itemA2);
 
-        assertEquals(expectedNumberOfItemsAScanned, scanner.findItemInScannedItems(itemA));
+        assertEquals(expectedNumberOfItemsAScanned, scanner.countScannedItem(itemA));
+    }
+
+    @Test
+    public void findNumberOfItemsAlreadyScannedAAA() {
+        ScannedItems scannedItems = mock(ScannedItems.class);
+        long expectedNumberOfItemsAScanned = 2L;
+
+        Scanner scanner = new Scanner(scannedItems);
+        Item itemA = new Item("A");
+        List<Item> itemsFound = Arrays.asList(itemA, itemA);
+
+        when(scannedItems.findItemAlreadyScanned(itemA)).thenReturn(itemsFound);
+
+        assertEquals(expectedNumberOfItemsAScanned, scanner.countScannedItem(itemA));
     }
 }

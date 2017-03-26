@@ -1,26 +1,26 @@
 package shoppingcart;
 
-import java.util.ArrayList;
-import java.util.function.Predicate;
+import java.util.List;
 
 public class Scanner {
-    private ArrayList<Item> scannedItems = new ArrayList<>();
+    private ScannedItems scannedItems;
+
+    public Scanner(ScannedItems scannedItems) {
+        this.scannedItems = scannedItems;
+    }
 
     public void scanAnItem(Item item) {
-        scannedItems.add(item);
+        scannedItems.storeItem(item);
     }
 
-    //TODO - Getter, how to refactor out
-    public ArrayList<Item> scannedItems() {
-        return scannedItems;
+    public List<Money> retrievePricesOfScannedItems(ItemPrices itemPrices) {
+        return scannedItems.findPricesOfScannedItems(itemPrices);
     }
 
-    public long findItemInScannedItems(Item item) {
-        return scannedItems.stream().filter(isItemTheSame(item)).count();
-    }
-
-    private Predicate<Item> isItemTheSame(Item item) {
-        return p -> p.equals(item);
+/*     TODO Should .count() be part of this method, or should it be in another class
+     ie ScannerCalculator????*/
+    public long countScannedItem(Item item) {
+        return scannedItems.findItemAlreadyScanned(item).stream().count();
     }
 }
 

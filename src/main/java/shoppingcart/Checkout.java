@@ -2,16 +2,22 @@ package shoppingcart;
 
 public class Checkout {
     private PricingRules pricingRules;
+    private Scanner scanner;
 
-    public Checkout(PricingRules pricingRules) {
+    public Checkout(PricingRules pricingRules, Scanner scanner) {
         this.pricingRules = pricingRules;
+        this.scanner = scanner;
     }
 
-    public Money total(){
-        return pricingRules.addScannedItemToTotal();
+    public Checkout(PricingRules pricingRules) {
+        this(pricingRules, new Scanner(new ScannedItems()));
+    }
+
+    public Money total() {
+        return pricingRules.totalScannedItems(scanner);
     }
 
     public void scan(Item item) {
-        pricingRules.addScannedItem(item);
+        scanner.scanAnItem(item);
     }
 }

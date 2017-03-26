@@ -12,6 +12,7 @@ public class Money {
     }
 
 // TODO - Should new Money object be created when adding or discounting
+    // Money calculator static
 //    public Money add(Money itemPrice) {
 //        int newAmount = amount + itemPrice.amount;
 //        return new Money(newAmount);
