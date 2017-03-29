@@ -7,6 +7,8 @@ public class Item {
         this.item = item;
     }
 
+    // TODO - create and extend ValueType to cover overriden method
+
     @Override
     public boolean equals(Object object) {
         return ((Item) object).item == item;

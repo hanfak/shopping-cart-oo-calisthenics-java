@@ -1,7 +1,8 @@
 package shoppingcart;
 
 public class TotalCalculator {
-    //TODO should be instance method???
+    //TODO should be instance or static method???
+
     public Money calculateTotal(Scanner scanner, ItemPrices itemPrices) {
         Money totalMoney = new Money(0);
         scanner.retrievePricesOfScannedItems(itemPrices)

@@ -2,9 +2,9 @@ package shoppingcart;
 
 public class PricingRules {
     private static final int NUMBER_OF_ITEM_A_FOR_DISCOUNT = 3;
-    private static final Money DISCOUNT_FOR_A = new Money(20);
+    private static final int DISCOUNT_FOR_A = 20;
     private static final int NUMBER_OF_ITEM_B_FOR_DISCOUNT = 2;
-    private static final Money DISCOUNT_FOR_B = new Money(15);
+    private static final int DISCOUNT_FOR_B = 15;
     public static final Item ITEM_B = new Item("B");
     public static final Item ITEM_A = new Item("A");
 
@@ -33,15 +33,19 @@ public class PricingRules {
     private Money discountTotal(Money grossTotal, Scanner scanner) {
         // TODO Use immutable list instead of if
         if (NumberOfItemMatchesDiscountAmount(scanner.countScannedItem(ITEM_A), NUMBER_OF_ITEM_A_FOR_DISCOUNT)) {
-            grossTotal.discount(DISCOUNT_FOR_A);
+            grossTotal.discount(discountAmount(ITEM_A, NUMBER_OF_ITEM_A_FOR_DISCOUNT, scanner, DISCOUNT_FOR_A));
         }
         if (NumberOfItemMatchesDiscountAmount(scanner.countScannedItem(ITEM_B), NUMBER_OF_ITEM_B_FOR_DISCOUNT)) {
-            grossTotal.discount(DISCOUNT_FOR_B);
+            grossTotal.discount(discountAmount(ITEM_B, NUMBER_OF_ITEM_B_FOR_DISCOUNT, scanner, DISCOUNT_FOR_B));
         }
         return grossTotal;
     }
     // TODO wrap the two parameters as NumberOfItems??
     private boolean NumberOfItemMatchesDiscountAmount(long totalNumberOfASpecificItem, int numberOfItemsForDiscount) {
-        return ((int) totalNumberOfASpecificItem) == numberOfItemsForDiscount;
+        return totalNumberOfASpecificItem / numberOfItemsForDiscount >= 1L;
+    }
+
+    private Money discountAmount(Item item, int numberOfItemsForDiscount, Scanner scanner, int discountAmount) {
+        return new Money((int) (discountAmount * scanner.numberOfDiscounts(item, numberOfItemsForDiscount)));
     }
 }

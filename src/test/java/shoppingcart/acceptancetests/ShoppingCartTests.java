@@ -59,7 +59,6 @@ public class ShoppingCartTests {
     }
 
     @Test
-    @Ignore
     public void totalIs180WhenDiscountAppliedOnce() {
         givenACheckoutSystemIsActive();
 
@@ -72,7 +71,6 @@ public class ShoppingCartTests {
     }
 
     @Test
-    @Ignore
     public void totalIs260WhenDiscountAppliedTwice() {
         givenACheckoutSystemIsActive();
 
@@ -87,7 +85,19 @@ public class ShoppingCartTests {
     }
 
     @Test
-    @Ignore
+    public void totalIs75WhenDiscountAppliedTwice() {
+        givenACheckoutSystemIsActive();
+
+        whenItemisScanned(B);
+        whenItemisScanned(B);
+        whenItemisScanned(B);
+        whenItemisScanned(B);
+        whenItemisScanned(B);
+
+        thenTotalIs(120);
+    }
+
+    @Test
     public void totalIs175WhenMultipeDiscountAppliedForDifferentItems() {
         givenACheckoutSystemIsActive();
 
@@ -101,7 +111,6 @@ public class ShoppingCartTests {
     }
 
     @Test
-    @Ignore
     public void totalIs210WhenGeneralMixOfItemsScanned() {
         givenACheckoutSystemIsActive();
 

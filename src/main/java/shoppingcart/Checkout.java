@@ -21,3 +21,5 @@ public class Checkout {
         scanner.scanAnItem(item);
     }
 }
+
+// TODO Use static method factory???

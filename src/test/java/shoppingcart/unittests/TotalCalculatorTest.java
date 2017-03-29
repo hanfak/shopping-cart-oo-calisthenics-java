@@ -1,10 +1,7 @@
 package shoppingcart.unittests;
 
 import org.junit.Test;
-import shoppingcart.ItemPrices;
-import shoppingcart.Money;
-import shoppingcart.Scanner;
-import shoppingcart.TotalCalculator;
+import shoppingcart.*;
 
 import java.util.Arrays;
 import java.util.List;

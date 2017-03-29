@@ -22,5 +22,10 @@ public class Scanner {
     public long countScannedItem(Item item) {
         return scannedItems.findItemAlreadyScanned(item).stream().count();
     }
+
+    public long numberOfDiscounts(Item item, long numberOfItemsForDiscount) {
+        return countScannedItem(item) / numberOfItemsForDiscount;
+    }
+
 }
 
