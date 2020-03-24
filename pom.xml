@@ -7,14 +7,305 @@
     <groupId>shoppingCart</groupId>
     <artifactId>shoppingCart</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <dependencies>
 
+    <properties>
+        <yatspec.version>1.22</yatspec.version>
+        <maven.surefire.version>2.19.1</maven.surefire.version>
+        <acceptance.tests>${project.groupId}.acceptancetests/**/*.java</acceptance.tests>
+        <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
+        <skipTests>false</skipTests>
+        <findbugs.version>3.0.4</findbugs.version>
+        <jacoco.version>0.8.2</jacoco.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <pmd.version>3.6</pmd.version>
+        <maven.jxr.plugin.version>2.5</maven.jxr.plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- Main build -->
+        <profile>
+            <id>main</id>
+            <activation>
+                <property>
+                    <name>!isolated</name><!-- Profile is active unless -Disolated is specified -->
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <!-- Unit Tests -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven.surefire.version}</version>
+                        <configuration>
+                            <runOrder>failedfirst</runOrder>
+                            <trimStackTrace>false</trimStackTrace>
+                            <systemPropertyVariables>
+                                <log4j.log.dir>${project.build.directory}/surefire-reports/logs</log4j.log.dir>
+                                <yatspec.output.dir>${project.build.directory}/surefire-reports/yatspec
+                                </yatspec.output.dir>
+                            </systemPropertyVariables>
+                            <environmentVariables>
+                                <NAMESPACE>surefireunittests</NAMESPACE>
+                            </environmentVariables>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>default-test</id>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                                <configuration>
+                                    <excludes>
+                                        <exclude>${acceptance.tests}</exclude>
+                                    </excludes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!--acceptance tests-->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <version>${maven.surefire.version}</version>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.maven.surefire</groupId>
+                                <artifactId>surefire-junit47</artifactId>
+                                <version>${maven.surefire.version}</version>
+                            </dependency>
+                        </dependencies>
+                        <executions>
+                            <execution>
+                                <id>integration-test</id>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                                <configuration>
+                                    <trimStackTrace>false</trimStackTrace>
+                                    <!-- Ensure that the integration tests do not rely on any production code -->
+                                    <classpathDependencyScopeExclude>compile</classpathDependencyScopeExclude>
+                                    <systemPropertyVariables>
+                                        <project.version>${project.version}</project.version>
+                                        <yatspec.output.dir>${project.build.directory}/failsafe-reports/yatspec
+                                        </yatspec.output.dir>
+                                    </systemPropertyVariables>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <includes>
+                                <include>${acceptance.tests}</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                    <!-- Enable default lifecycle -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>default-compile</id>
+                                <phase>compile</phase>
+                            </execution>
+                            <execution>
+                                <id>default-testCompile</id>
+                                <phase>test-compile</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!--findbugs-->
+        <profile>
+            <id>findbugs</id>
+            <activation>
+                <property>
+                    <name>!isolated</name><!-- Profile is active unless -Disolated is specified -->
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <!-- Enable required lifecycle -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>${maven.compiler.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>default-compile</id>
+                                <phase>compile</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>findbugs-maven-plugin</artifactId>
+                        <version>${findbugs.version}</version>
+                        <configuration>
+                            <skip>${skipTests}</skip>
+                            <effort>Max</effort>
+                            <threshold>Low</threshold>
+                            <failOnError>true</failOnError>
+                            <excludeFilterFile>${project.basedir}/findbugs/findbugs-excludes.xml</excludeFilterFile>
+                            <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>findbugs-check</id>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!--PMD-->
+        <profile>
+            <id>pmd</id>
+            <activation>
+                <property>
+                    <name>!isolated</name><!-- Profile is active unless -Disolated is specified -->
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jxr-plugin</artifactId>
+                        <version>${maven.jxr.plugin.version}</version>
+                        <configuration>
+                            <skip>${skipTests}</skip>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>jxr</goal>
+                                    <goal>test-jxr</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-pmd-plugin</artifactId>
+                        <version>${pmd.version}</version>
+                        <configuration>
+                            <skip>${skipTests}</skip>
+                            <verbose>true</verbose>
+                            <printFailingErrors>true</printFailingErrors>
+                            <rulesets>
+                                <ruleset>${project.basedir}/pmd/pmd-rules.xml</ruleset>
+                            </rulesets>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!--jacoco - code coverage-->
+        <profile>
+            <id>jacoco</id>
+            <activation>
+                <property>
+                    <name>!isolated</name><!-- Profile is active unless -Disolated is specified -->
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>${jacoco.version}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>prepare-agent</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>jacoco-report</id>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>report</goal>
+                                </goals>
+                            </execution>
+                            <!-- Add this checking -->
+                            <execution>
+                                <id>jacoco-check</id>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                                <configuration>
+                                    <rules>
+                                        <rule>
+                                            <element>PACKAGE</element>
+                                            <limits>
+                                                <limit>
+                                                    <counter>LINE</counter>
+                                                    <value>COVEREDRATIO</value>
+                                                    <minimum>0.99</minimum>
+                                                </limit>
+                                            </limits>
+                                        </rule>
+                                    </rules>
+                                    <excludes/>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <!--Unit testing library-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
         </dependency>
-
+        <!--Assertion library-->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.12.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
