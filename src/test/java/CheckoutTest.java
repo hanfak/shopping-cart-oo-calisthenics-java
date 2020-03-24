@@ -28,4 +28,13 @@ public class CheckoutTest {
 
     assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(115L));
   }
+
+  @Test
+  public void scanMultipleDiscountedItems() {
+    underTest.scan(ITEM_A);
+    underTest.scan(ITEM_A);
+    underTest.scan(ITEM_A);
+
+    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(130L));
+  }
 }
