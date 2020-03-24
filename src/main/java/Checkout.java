@@ -1,11 +1,17 @@
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Checkout {
-  public void scan(Item item) {
+  List<Item> scannedItems = new ArrayList<>();
 
+  public void scan(Item item) {
+    scannedItems.add(item);
   }
 
   public BigDecimal total() {
-    return BigDecimal.valueOf(50L);
+    return scannedItems.stream()
+            .map(Item::getPrice)
+            .reduce(BigDecimal.ZERO, BigDecimal::add);
   }
 }
