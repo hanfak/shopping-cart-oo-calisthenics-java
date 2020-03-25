@@ -292,6 +292,12 @@
     </profiles>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter-api</artifactId>-->
+<!--            <version>5.4.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <!--Unit testing library-->
         <dependency>
             <groupId>junit</groupId>

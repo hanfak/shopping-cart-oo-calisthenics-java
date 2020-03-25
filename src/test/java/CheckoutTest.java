@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -36,5 +37,16 @@ public class CheckoutTest {
     underTest.scan(ITEM_A);
 
     assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(130L));
+  }
+
+  @Test
+  @Ignore
+  public void scanMultipleDiscountedItemsAndOtherItemThatDoesnotGetDiscounted() {
+    underTest.scan(ITEM_A);
+    underTest.scan(ITEM_A);
+    underTest.scan(ITEM_A);
+    underTest.scan(ITEM_A);
+
+    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(180L));
   }
 }
