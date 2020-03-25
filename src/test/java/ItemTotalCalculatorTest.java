@@ -29,6 +29,13 @@ public class ItemTotalCalculatorTest {
   }
 
   @Test
+  public void findTotalOfNonDiscountedItemsRemoveMultipleDiscountedItems() {
+    List<Item> items = Arrays.asList(ITEM_A, ITEM_B, ITEM_C, ITEM_D);
+    assertThat(underTest.calulateNonDiscountedItems(items, "A", "B"))
+            .isEqualTo(BigDecimal.valueOf(35L));
+  }
+
+  @Test
   public void findTotalOfDiscountedAndNonDiscountedItems() {
     assertThat(underTest.calulateTotalOfDiscountedItemsA(BigDecimal.valueOf(150L)))
             .isEqualTo(BigDecimal.valueOf(130L));

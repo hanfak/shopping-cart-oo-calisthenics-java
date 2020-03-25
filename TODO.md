@@ -1,0 +1,20 @@
+- remove getters
+    - use map??
+- mocks
+- Create Money/Price class instead of BigDec, wiht less implementation
+- Extract total from checkout to calculator, which deals with discoutn rules
+- Scanned items use as interface, and use stub in test that implements map
+- Use rules engine
+
+- test cases
+     - Multiple A
+        - multiple of 3
+        - Non mulitple of 3 ie 5
+     - Multiple B
+        - multiple of 2
+        - Non mulitple of 2 ie 3
+    - Mulitple items including mulitple of B
+        - ie a, c, b, d, b
+    - Multiple discoutned items of diff items
+        - a ,b ,a, b, a
+    - a,a,a,a,b,b,b,c,d,d

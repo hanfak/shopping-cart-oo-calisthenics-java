@@ -14,14 +14,21 @@ public class Checkout {
   public void scan(Item item) {
     scannedItems.addItem(item);
   }
-  // tODO Create Money/Price class instead of BigDec, wiht less implementation
+
   public BigDecimal total() {
-    List<Item> itemA = scannedItems.itemsOfName("A");
-    BigDecimal totalDiscountedItemA = itemTotalCalculator.calulate(itemA);
+    BigDecimal totalDiscountedItemA = itemTotalCalculator.calulate(scannedItems.itemsOfName("A"));
+    BigDecimal totalDiscountedItemB = itemTotalCalculator.calulate(scannedItems.itemsOfName("B"));
+
     if (scannedItems.numberOfScannedItem("A") == 3) {
       return itemTotalCalculator.calulateTotalOfDiscountedItemsA(totalDiscountedItemA);
     }
-    return itemTotalCalculator.calulateNonDiscountedItems(scannedItems.allItems(), "A")
-            .add(totalDiscountedItemA);
+
+    if (scannedItems.numberOfScannedItem("B") == 2) {
+      return itemTotalCalculator.calulateTotalOfDiscountedItemsB(totalDiscountedItemB);
+    }
+
+    return itemTotalCalculator.calulateNonDiscountedItems(scannedItems.allItems(), "A", "B")
+            .add(totalDiscountedItemA)
+            .add(totalDiscountedItemB);
   }
 }

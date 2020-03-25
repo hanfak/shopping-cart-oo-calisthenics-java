@@ -25,12 +25,20 @@ public class CheckoutTest {
   }
 
   @Test
-  public void scanMultipleDiscountedItems() {
+  public void scanMultipleDiscountedItemsOfTypeA() {
     underTest.scan(ITEM_A);
     underTest.scan(ITEM_A);
     underTest.scan(ITEM_A);
 
     assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(130L));
+  }
+
+  @Test
+  public void scanMultipleDiscountedItemsOfTypeB() {
+    underTest.scan(ITEM_B);
+    underTest.scan(ITEM_B);
+
+    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(45L));
   }
 
   @Test
