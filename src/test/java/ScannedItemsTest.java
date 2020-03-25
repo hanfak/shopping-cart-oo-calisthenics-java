@@ -40,12 +40,12 @@ public class ScannedItemsTest {
     assertThat(actualResult).containsExactly(ITEM_A, ITEM_A_1, ITEM_A_2);
   }
 
-  private final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_A_1 = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_A_2 = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
-  private final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
-  private final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
+  private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_A_1 = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_A_2 = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
+  private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
+  private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
 
   private final ScannedItems underTest = new ScannedItems();
 }

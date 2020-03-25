@@ -28,7 +28,15 @@ public class ItemTotalCalculatorTest {
             .isEqualTo(BigDecimal.valueOf(65L));
   }
 
+  @Test
+  public void findTotalOfDiscountedAndNonDiscountedItems() {
+    assertThat(underTest.calulateTotalOfDiscountedItemsA(BigDecimal.valueOf(150L)))
+            .isEqualTo(BigDecimal.valueOf(130L));
+  }
+
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_A_1 = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_A_2 = new Item("A", BigDecimal.valueOf(50L));
   private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
   private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
   private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));

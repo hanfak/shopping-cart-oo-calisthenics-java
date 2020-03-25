@@ -7,14 +7,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class CheckoutTest {
 
-  private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
-  private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
-  private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
-  private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
-
-  private final ScannedItems scannedItems = new ScannedItems();
-  private final Checkout underTest = new Checkout(scannedItems);
-
   @Test
   public void scanOneItem() {
     underTest.scan(ITEM_A);
@@ -51,4 +43,13 @@ public class CheckoutTest {
 
     assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(180L));
   }
+
+  private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
+  private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
+  private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
+
+  private final ScannedItems scannedItems = new ScannedItems();
+  private final ItemTotalCalculator itemTotalCalculator = new ItemTotalCalculator();
+  private final Checkout underTest = new Checkout(scannedItems, itemTotalCalculator);
 }

@@ -15,4 +15,8 @@ public class ItemTotalCalculator {
             .map(Item::getPrice)
             .reduce(BigDecimal.ZERO, BigDecimal::add);
   }
+
+  public BigDecimal calulateTotalOfDiscountedItemsA(BigDecimal totalDiscountedItems) {
+    return totalDiscountedItems.subtract(BigDecimal.valueOf(20L));
+  }
 }
