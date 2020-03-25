@@ -2,15 +2,19 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public class Checkout {
-  ScannedItems scannedItems1 = new ScannedItems();
+  private final ScannedItems scannedItems;
+
+  public Checkout(ScannedItems scannedItems) {
+    this.scannedItems = scannedItems;
+  }
 
   public void scan(Item item) {
-    scannedItems1.addItem(item);
+    scannedItems.addItem(item);
   }
 
   public BigDecimal total() {
-    List<Item> itemA = scannedItems1.itemsOfName("A");
-    BigDecimal totalNonDiscountedItems = scannedItems1.allItems().stream()
+    List<Item> itemA = scannedItems.itemsOfName("A");
+    BigDecimal totalNonDiscountedItems = scannedItems.allItems().stream()
             .filter(item -> !item.getName().equals("A"))
             .map(Item::getPrice)
             .reduce(BigDecimal.ZERO, BigDecimal::add);

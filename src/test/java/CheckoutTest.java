@@ -7,11 +7,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class CheckoutTest {
 
-  private final Checkout underTest = new Checkout();
-  private final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
-  private final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
-  private final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
+  private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
+  private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
+  private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
+  private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
+
+  private final ScannedItems scannedItems = new ScannedItems();
+  private final Checkout underTest = new Checkout(scannedItems);
 
   @Test
   public void scanOneItem() {
