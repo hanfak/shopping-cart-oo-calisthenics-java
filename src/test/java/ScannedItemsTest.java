@@ -8,15 +8,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ScannedItemsTest {
 
-  private final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_A_1 = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_A_2 = new Item("A", BigDecimal.valueOf(50L));
-  private final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
-  private final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
-  private final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
-
-  private final ScannedItems underTest = new ScannedItems();
-
   @Test
   public void returnZeroItemsWhenNoItemsAreAdded() {
     List<Item> actualResult = underTest.allItems();
@@ -49,4 +40,12 @@ public class ScannedItemsTest {
     assertThat(actualResult).containsExactly(ITEM_A, ITEM_A_1, ITEM_A_2);
   }
 
+  private final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
+  private final Item ITEM_A_1 = new Item("A", BigDecimal.valueOf(50L));
+  private final Item ITEM_A_2 = new Item("A", BigDecimal.valueOf(50L));
+  private final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
+  private final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
+  private final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
+
+  private final ScannedItems underTest = new ScannedItems();
 }

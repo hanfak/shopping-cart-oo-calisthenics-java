@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Checkout {
   private final ScannedItems scannedItems;
+  ItemTotalCalculator itemTotalCalculator = new ItemTotalCalculator();
 
   public Checkout(ScannedItems scannedItems) {
     this.scannedItems = scannedItems;
@@ -11,7 +12,7 @@ public class Checkout {
   public void scan(Item item) {
     scannedItems.addItem(item);
   }
-
+  // tODO Create Money/Price class instead of BigDec, wiht less implementation
   public BigDecimal total() {
     List<Item> itemA = scannedItems.itemsOfName("A");
     BigDecimal totalNonDiscountedItems = scannedItems.allItems().stream()

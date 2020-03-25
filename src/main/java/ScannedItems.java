@@ -4,7 +4,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 public class ScannedItems {
-  List<Item> scannedItems = new ArrayList<>();
+  List<Item> scannedItems = new ArrayList<>(); // TODO inject arraylist or use interface
 
   void addItem(Item item) {
     scannedItems.add(item);
