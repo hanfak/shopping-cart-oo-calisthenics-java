@@ -18,7 +18,7 @@ public class Checkout {
   public BigDecimal total() {
     List<Item> itemA = scannedItems.itemsOfName("A");
     BigDecimal totalDiscountedItemA = itemTotalCalculator.calulate(itemA);
-    if (itemA.size() == 3) {
+    if (scannedItems.numberOfScannedItem("A") == 3) {
       return itemTotalCalculator.calulateTotalOfDiscountedItemsA(totalDiscountedItemA);
     }
     return itemTotalCalculator.calulateNonDiscountedItems(scannedItems.allItems(), "A")

@@ -19,4 +19,10 @@ public class ScannedItems {
             .filter(item -> item.getName().equals(itemName))
             .collect(toList());
   }
+
+  public Long numberOfScannedItem(String itemName) {
+    return scannedItems.stream()
+            .filter(item -> item.getName().equals(itemName))
+            .count();
+  }
 }

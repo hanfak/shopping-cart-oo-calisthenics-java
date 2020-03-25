@@ -40,6 +40,18 @@ public class ScannedItemsTest {
     assertThat(actualResult).containsExactly(ITEM_A, ITEM_A_1, ITEM_A_2);
   }
 
+  @Test
+  public void returnTotalNumberOfSpecificItemScanned() {
+    underTest.addItem(ITEM_A);
+    underTest.addItem(ITEM_A_1);
+    underTest.addItem(ITEM_B);
+    underTest.addItem(ITEM_A_2);
+
+    Long actualResult = underTest.numberOfScannedItem("A");
+
+    assertThat(actualResult).isEqualTo(3);
+  }
+
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
   private static final Item ITEM_A_1 = new Item("A", BigDecimal.valueOf(50L));
   private static final Item ITEM_A_2 = new Item("A", BigDecimal.valueOf(50L));

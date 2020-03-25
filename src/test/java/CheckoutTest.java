@@ -49,6 +49,7 @@ public class CheckoutTest {
   private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
   private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
 
+  // TODO use mocks or keep and use as end to end test??
   private final ScannedItems scannedItems = new ScannedItems();
   private final ItemTotalCalculator itemTotalCalculator = new ItemTotalCalculator();
   private final Checkout underTest = new Checkout(scannedItems, itemTotalCalculator);

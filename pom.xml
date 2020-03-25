@@ -292,6 +292,7 @@
     </profiles>
 
     <dependencies>
+<!--        TODO use junit5 instead-->
 <!--        <dependency>-->
 <!--            <groupId>org.junit.jupiter</groupId>-->
 <!--            <artifactId>junit-jupiter-api</artifactId>-->
