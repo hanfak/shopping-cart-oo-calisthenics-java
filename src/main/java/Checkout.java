@@ -15,13 +15,8 @@ public class Checkout {
   // tODO Create Money/Price class instead of BigDec, wiht less implementation
   public BigDecimal total() {
     List<Item> itemA = scannedItems.itemsOfName("A");
-    BigDecimal totalNonDiscountedItems = scannedItems.allItems().stream()
-            .filter(item -> !item.getName().equals("A"))
-            .map(Item::getPrice)
-            .reduce(BigDecimal.ZERO, BigDecimal::add);
-    BigDecimal totalDiscountedItemA = itemA.stream()
-            .map(Item::getPrice)
-            .reduce(BigDecimal.ZERO, BigDecimal::add);
+    BigDecimal totalNonDiscountedItems = itemTotalCalculator.calulateNonDiscountedItems(scannedItems.allItems(), "A");
+    BigDecimal totalDiscountedItemA = itemTotalCalculator.calulate(itemA);
     if (itemA.size() == 3) {
       return totalNonDiscountedItems.add(totalDiscountedItemA).subtract(BigDecimal.valueOf(20L));
     }
