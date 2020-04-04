@@ -1,28 +1,24 @@
 import java.math.BigDecimal;
-import java.util.List;
-
-import static java.util.Arrays.stream;
 
 public class ItemTotalCalculator {
 
-  public BigDecimal calulateTotalOfItems(List<Item> items) {
-    return items.stream()
-            .map(Item::getPrice)
-            .reduce(BigDecimal.ZERO, BigDecimal::add);
+  private final DiscountedItemCalculator discountedItemCalculator;
+  private final NonDiscountedItemCalculator nonDiscountedItemCalculator;
+
+  public ItemTotalCalculator(DiscountedItemCalculator discountedItemCalculator, NonDiscountedItemCalculator nonDiscountedItemCalculator) {
+    this.discountedItemCalculator = discountedItemCalculator;
+    this.nonDiscountedItemCalculator = nonDiscountedItemCalculator;
   }
 
-  public BigDecimal calulateNonDiscountedItems(List<Item> items, String... itemNames) {
-    return items.stream()
-            .filter(item -> stream(itemNames).noneMatch(itemName -> item.getName().equals(itemName)))
-            .map(Item::getPrice)
-            .reduce(BigDecimal.ZERO, BigDecimal::add);
+  public BigDecimal calculateTotal(ScannedItems scannedItems) {
+    return calculateTotalOfAllNonDiscountedItems(scannedItems).add(calculateTotalOfAllDiscountedItems(scannedItems));
   }
 
-  public BigDecimal calulateTotalOfDiscountedItemsA(BigDecimal totalDiscountedItems) {
-    return totalDiscountedItems.subtract(BigDecimal.valueOf(20L));
+  private BigDecimal calculateTotalOfAllDiscountedItems(ScannedItems scannedItems) {
+    return discountedItemCalculator.calculate(scannedItems);
   }
 
-  public BigDecimal calulateTotalOfDiscountedItemsB(BigDecimal totalDiscountedItems) {
-    return totalDiscountedItems.subtract(BigDecimal.valueOf(15L));
+  private BigDecimal calculateTotalOfAllNonDiscountedItems(ScannedItems scannedItems) {
+    return nonDiscountedItemCalculator.calculate(scannedItems, "A", "B"); // TODO should not pass this list here
   }
 }

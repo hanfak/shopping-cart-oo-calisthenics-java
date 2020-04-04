@@ -47,7 +47,7 @@ public class ScannedItemsTest {
     underTest.addItem(ITEM_B);
     underTest.addItem(ITEM_A_2);
 
-    Long actualResult = underTest.numberOfScannedItem("A");
+    int actualResult = underTest.numberOfScannedItem("A");
 
     assertThat(actualResult).isEqualTo(3);
   }

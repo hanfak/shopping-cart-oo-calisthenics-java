@@ -1,64 +1,33 @@
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.math.BigDecimal;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class CheckoutTest {
 
   @Test
-  public void scanOneItem() {
+  public void canAddAScannedItem() {
     underTest.scan(ITEM_A);
 
-    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(50L));
+    verify(scannedItems).addItem(ITEM_A);
   }
 
   @Test
-  public void scanMultipleItems() {
-    underTest.scan(ITEM_A);
-    underTest.scan(ITEM_B);
-    underTest.scan(ITEM_C);
-    underTest.scan(ITEM_D);
+  public void canFindTotalOfAllScannedItems() {
+    when(itemsTotalCalculator.calculateTotal(scannedItems)).thenReturn(BigDecimal.valueOf(50L));
+    BigDecimal actualTotal = underTest.total();
 
-    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(115L));
-  }
-
-  @Test
-  public void scanMultipleDiscountedItemsOfTypeA() {
-    underTest.scan(ITEM_A);
-    underTest.scan(ITEM_A);
-    underTest.scan(ITEM_A);
-
-    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(130L));
-  }
-
-  @Test
-  public void scanMultipleDiscountedItemsOfTypeB() {
-    underTest.scan(ITEM_B);
-    underTest.scan(ITEM_B);
-
-    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(45L));
-  }
-
-  @Test
-  @Ignore
-  public void scanMultipleDiscountedItemsAndOtherItemThatDoesnotGetDiscounted() {
-    underTest.scan(ITEM_A);
-    underTest.scan(ITEM_A);
-    underTest.scan(ITEM_A);
-    underTest.scan(ITEM_A);
-
-    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(180L));
+    assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(50L));
+    verify(itemsTotalCalculator).calculateTotal(scannedItems);
   }
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
-  private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
-  private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
-  private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
 
-  // TODO use mocks or keep and use as end to end test??
-  private final ScannedItems scannedItems = new ScannedItems();
-  private final ItemTotalCalculator itemTotalCalculator = new ItemTotalCalculator();
-  private final Checkout underTest = new Checkout(scannedItems, itemTotalCalculator);
+  private final ScannedItems scannedItems = mock(ScannedItems.class);
+  private final ItemTotalCalculator itemsTotalCalculator = mock(ItemTotalCalculator.class);
+  private final Checkout underTest = new Checkout(scannedItems, itemsTotalCalculator);
 }

@@ -1,6 +1,7 @@
 import java.math.BigDecimal;
 // todo make immutable
 public class Item {
+
   private final String name;
   private final BigDecimal price;
 
@@ -16,4 +17,6 @@ public class Item {
   public String getName() {
     return name;
   }
+
+  //TODO equals, hashcode, toString, formatter??, comparable??
 }
