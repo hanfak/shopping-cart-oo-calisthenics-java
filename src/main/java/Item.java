@@ -1,5 +1,5 @@
 import java.math.BigDecimal;
-
+// todo make immutable
 public class Item {
   private final String name;
   private final BigDecimal price;

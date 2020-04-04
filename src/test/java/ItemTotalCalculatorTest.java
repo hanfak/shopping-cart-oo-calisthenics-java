@@ -12,13 +12,13 @@ public class ItemTotalCalculatorTest {
   @Test
   public void findTotalOfOneItem() {
     List<Item> item = Collections.singletonList(ITEM_A);
-    assertThat(underTest.calulate(item)).isEqualTo(BigDecimal.valueOf(50L));
+    assertThat(underTest.calulateTotalOfItems(item)).isEqualTo(BigDecimal.valueOf(50L));
   }
 
   @Test
   public void findTotalOfMultipleItems() {
     List<Item> items = Arrays.asList(ITEM_A, ITEM_B, ITEM_C, ITEM_D);
-    assertThat(underTest.calulate(items)).isEqualTo(BigDecimal.valueOf(115L));
+    assertThat(underTest.calulateTotalOfItems(items)).isEqualTo(BigDecimal.valueOf(115L));
   }
 
   @Test

@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.util.List;
 
 public class Checkout {
 
@@ -16,8 +15,8 @@ public class Checkout {
   }
 
   public BigDecimal total() {
-    BigDecimal totalDiscountedItemA = itemTotalCalculator.calulate(scannedItems.itemsOfName("A"));
-    BigDecimal totalDiscountedItemB = itemTotalCalculator.calulate(scannedItems.itemsOfName("B"));
+    BigDecimal totalDiscountedItemA = itemTotalCalculator.calulateTotalOfItems(scannedItems.itemsOfName("A"));
+    BigDecimal totalDiscountedItemB = itemTotalCalculator.calulateTotalOfItems(scannedItems.itemsOfName("B"));
 
     if (scannedItems.numberOfScannedItem("A") == 3) {
       return itemTotalCalculator.calulateTotalOfDiscountedItemsA(totalDiscountedItemA);

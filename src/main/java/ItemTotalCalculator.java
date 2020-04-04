@@ -5,7 +5,7 @@ import static java.util.Arrays.stream;
 
 public class ItemTotalCalculator {
 
-  public BigDecimal calulate(List<Item> items) {
+  public BigDecimal calulateTotalOfItems(List<Item> items) {
     return items.stream()
             .map(Item::getPrice)
             .reduce(BigDecimal.ZERO, BigDecimal::add);
