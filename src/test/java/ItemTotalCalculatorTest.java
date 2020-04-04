@@ -10,25 +10,25 @@ public class ItemTotalCalculatorTest {
 
   @Test
   public void findTotalOfOneItem() {
-    ScannedItems scannedItems = new ScannedItems();
-    scannedItems.addItem(ITEM_A);
-    when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(50L));
-    when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.ZERO);
+    ScannedItemsRepository scannedItemsRepository = new ScannedItems();
+    scannedItemsRepository.addItem(ITEM_A);
+    when(discountedItemCalculator.calculate(scannedItemsRepository)).thenReturn(BigDecimal.valueOf(50L));
+    when(nonDiscountedItemCalculator.calculate(scannedItemsRepository)).thenReturn(BigDecimal.ZERO);
 
-    assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(50L));
+    assertThat(underTest.calculateTotal(scannedItemsRepository)).isEqualTo(BigDecimal.valueOf(50L));
   }
 
   @Test
   public void findTotalOfMultipleItems() {
-    ScannedItems scannedItems = new ScannedItems();
-    scannedItems.addItem(ITEM_A);
-    scannedItems.addItem(ITEM_B);
-    scannedItems.addItem(ITEM_C);
-    scannedItems.addItem(ITEM_D);
-    when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(80L));
-    when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(35L));
+    ScannedItemsRepository scannedItemsRepository = new ScannedItems();
+    scannedItemsRepository.addItem(ITEM_A);
+    scannedItemsRepository.addItem(ITEM_B);
+    scannedItemsRepository.addItem(ITEM_C);
+    scannedItemsRepository.addItem(ITEM_D);
+    when(discountedItemCalculator.calculate(scannedItemsRepository)).thenReturn(BigDecimal.valueOf(80L));
+    when(nonDiscountedItemCalculator.calculate(scannedItemsRepository)).thenReturn(BigDecimal.valueOf(35L));
 
-    assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(115L));
+    assertThat(underTest.calculateTotal(scannedItemsRepository)).isEqualTo(BigDecimal.valueOf(115L));
   }
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));

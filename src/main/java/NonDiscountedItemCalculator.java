@@ -9,9 +9,9 @@ public class NonDiscountedItemCalculator {
     this.discountedItemRepository = discountedItemRepository;
   }
 
-  public BigDecimal calculate(ScannedItems scannedItems) {
+  public BigDecimal calculate(ScannedItemsRepository scannedItemsRepository) {
     List<Item> allDiscountedItems = discountedItemRepository.findAllDiscountedItems();
-    return scannedItems.allItems().stream()
+    return scannedItemsRepository.allItems().stream()
             .filter(item -> !allDiscountedItems.contains(item))
             .map(Item::getPrice)
             .reduce(BigDecimal.ZERO, BigDecimal::add);

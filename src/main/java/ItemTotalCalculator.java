@@ -10,15 +10,15 @@ public class ItemTotalCalculator {
     this.nonDiscountedItemCalculator = nonDiscountedItemCalculator;
   }
 
-  public BigDecimal calculateTotal(ScannedItems scannedItems) {
-    return calculateTotalOfAllNonDiscountedItems(scannedItems).add(calculateTotalOfAllDiscountedItems(scannedItems));
+  public BigDecimal calculateTotal(ScannedItemsRepository scannedItemsRepository) {
+    return calculateTotalOfAllNonDiscountedItems(scannedItemsRepository).add(calculateTotalOfAllDiscountedItems(scannedItemsRepository));
   }
 
-  private BigDecimal calculateTotalOfAllDiscountedItems(ScannedItems scannedItems) {
-    return discountedItemCalculator.calculate(scannedItems);
+  private BigDecimal calculateTotalOfAllDiscountedItems(ScannedItemsRepository scannedItemsRepository) {
+    return discountedItemCalculator.calculate(scannedItemsRepository);
   }
 
-  private BigDecimal calculateTotalOfAllNonDiscountedItems(ScannedItems scannedItems) {
-    return nonDiscountedItemCalculator.calculate(scannedItems);
+  private BigDecimal calculateTotalOfAllNonDiscountedItems(ScannedItemsRepository scannedItemsRepository) {
+    return nonDiscountedItemCalculator.calculate(scannedItemsRepository);
   }
 }

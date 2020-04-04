@@ -2,20 +2,20 @@ import java.math.BigDecimal;
 
 public class Checkout {
 
-  private final ScannedItems scannedItems;
+  private final ScannedItemsRepository scannedItemsRepository;
   private final ItemTotalCalculator itemTotalCalculator;
 
-  public Checkout(ScannedItems scannedItems, ItemTotalCalculator itemTotalCalculator) {
-    this.scannedItems = scannedItems;
+  public Checkout(ScannedItemsRepository scannedItemsRepository, ItemTotalCalculator itemTotalCalculator) {
+    this.scannedItemsRepository = scannedItemsRepository;
     this.itemTotalCalculator = itemTotalCalculator;
   }
 
   public void scan(Item item) {
     // TODO optional, add defensive prog if this interface available externally
-    scannedItems.addItem(item);
+    scannedItemsRepository.addItem(item);
   }
 
   public BigDecimal total() {
-    return itemTotalCalculator.calculateTotal(scannedItems);
+    return itemTotalCalculator.calculateTotal(scannedItemsRepository);
   }
 }

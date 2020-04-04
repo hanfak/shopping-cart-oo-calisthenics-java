@@ -59,5 +59,5 @@ public class ScannedItemsTest {
   private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
   private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
 
-  private final ScannedItems underTest = new ScannedItems();
+  private final ScannedItemsRepository underTest = new ScannedItems();
 }

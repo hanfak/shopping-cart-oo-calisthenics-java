@@ -14,21 +14,21 @@ public class NonDiscountedItemCalculatorTest {
 
   @Test
   public void findTotalWithOneItemAndNoDiscountedItemsAvailable() {
-    ScannedItems scannedItems = new ScannedItems();
-    scannedItems.addItem(ITEM_C);
+    ScannedItemsRepository scannedItemsRepository = new ScannedItems();
+    scannedItemsRepository.addItem(ITEM_C);
 
-    BigDecimal actualTotal = underTest.calculate(scannedItems);
+    BigDecimal actualTotal = underTest.calculate(scannedItemsRepository);
 
     assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(20L));
   }
 
   @Test
   public void findTotalWithMutlipleItemsAndNoDiscountedItemsAvailable() {
-    ScannedItems scannedItems = new ScannedItems();
-    scannedItems.addItem(ITEM_C);
-    scannedItems.addItem(ITEM_D);
+    ScannedItemsRepository scannedItemsRepository = new ScannedItems();
+    scannedItemsRepository.addItem(ITEM_C);
+    scannedItemsRepository.addItem(ITEM_D);
 
-    BigDecimal actualTotal = underTest.calculate(scannedItems);
+    BigDecimal actualTotal = underTest.calculate(scannedItemsRepository);
 
     assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(35L));
   }
@@ -37,10 +37,10 @@ public class NonDiscountedItemCalculatorTest {
   public void findTotalWithOneDiscountedItemsAvailable() {
     when(discountedItemRepository.findAllDiscountedItems())
             .thenReturn(singletonList(new Item("A", BigDecimal.valueOf(50L))));
-    ScannedItems scannedItems = new ScannedItems();
-    scannedItems.addItem(ITEM_A);
+    ScannedItemsRepository scannedItemsRepository = new ScannedItems();
+    scannedItemsRepository.addItem(ITEM_A);
 
-    BigDecimal actualTotal = underTest.calculate(scannedItems);
+    BigDecimal actualTotal = underTest.calculate(scannedItemsRepository);
 
     assertThat(actualTotal).isEqualTo(BigDecimal.ZERO);
   }
@@ -48,13 +48,13 @@ public class NonDiscountedItemCalculatorTest {
   @Test
   public void findTotalWithMultipleDiscountedItemsAvailable() {
     when(discountedItemRepository.findAllDiscountedItems()).thenReturn(discountedItems);
-    ScannedItems scannedItems = new ScannedItems();
-    scannedItems.addItem(ITEM_A);
-    scannedItems.addItem(ITEM_B);
-    scannedItems.addItem(ITEM_C);
-    scannedItems.addItem(ITEM_D);
+    ScannedItemsRepository scannedItemsRepository = new ScannedItems();
+    scannedItemsRepository.addItem(ITEM_A);
+    scannedItemsRepository.addItem(ITEM_B);
+    scannedItemsRepository.addItem(ITEM_C);
+    scannedItemsRepository.addItem(ITEM_D);
 
-    BigDecimal actualTotal = underTest.calculate(scannedItems);
+    BigDecimal actualTotal = underTest.calculate(scannedItemsRepository);
 
     assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(35L));
   }
