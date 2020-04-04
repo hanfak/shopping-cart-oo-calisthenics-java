@@ -1,3 +1,6 @@
+package com.hanfak.repository;
+
+import com.hanfak.domain.Item;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -59,5 +62,5 @@ public class ScannedItemsTest {
   private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
   private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
 
-  private final ScannedItemsRepository underTest = new ScannedItems();
+  private final ScannedItems underTest = new ScannedItems();
 }

@@ -1,3 +1,5 @@
+package com.hanfak.usecase;
+
 import java.math.BigDecimal;
 
 public class ItemTotalCalculator {

@@ -1,3 +1,7 @@
+package com.hanfak.usecase;
+
+import com.hanfak.domain.Item;
+
 import java.math.BigDecimal;
 
 public class Checkout {

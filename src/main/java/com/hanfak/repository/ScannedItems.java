@@ -1,3 +1,8 @@
+package com.hanfak.repository;
+
+import com.hanfak.domain.Item;
+import com.hanfak.usecase.ScannedItemsRepository;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,3 +1,5 @@
+package com.hanfak.domain;
+
 import lombok.Value;
 
 import java.math.BigDecimal;

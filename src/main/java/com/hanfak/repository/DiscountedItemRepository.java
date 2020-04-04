@@ -1,3 +1,7 @@
+package com.hanfak.repository;
+
+import com.hanfak.domain.Item;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;

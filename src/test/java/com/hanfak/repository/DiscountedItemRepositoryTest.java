@@ -1,3 +1,6 @@
+package com.hanfak.repository;
+
+import com.hanfak.domain.Item;
 import org.junit.Test;
 
 import java.math.BigDecimal;

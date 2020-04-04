@@ -1,4 +1,8 @@
+package com.hanfak.usecase;
+
+import com.hanfak.domain.Item;
 import org.junit.Test;
+import com.hanfak.repository.ScannedItems;
 
 import java.math.BigDecimal;
 
