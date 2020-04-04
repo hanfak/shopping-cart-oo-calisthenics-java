@@ -19,6 +19,6 @@ public class ItemTotalCalculator {
   }
 
   private BigDecimal calculateTotalOfAllNonDiscountedItems(ScannedItems scannedItems) {
-    return nonDiscountedItemCalculator.calculate(scannedItems, "A", "B"); // TODO should not pass this list here
+    return nonDiscountedItemCalculator.calculate(scannedItems);
   }
 }

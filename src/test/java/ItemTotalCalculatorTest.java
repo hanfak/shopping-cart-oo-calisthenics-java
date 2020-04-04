@@ -13,7 +13,7 @@ public class ItemTotalCalculatorTest {
     ScannedItems scannedItems = new ScannedItems();
     scannedItems.addItem(ITEM_A);
     when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(50L));
-    when(nonDiscountedItemCalculator.calculate(scannedItems, "A", "B")).thenReturn(BigDecimal.ZERO);
+    when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.ZERO);
 
     assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(50L));
   }
@@ -26,7 +26,7 @@ public class ItemTotalCalculatorTest {
     scannedItems.addItem(ITEM_C);
     scannedItems.addItem(ITEM_D);
     when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(80L));
-    when(nonDiscountedItemCalculator.calculate(scannedItems, "A", "B")).thenReturn(BigDecimal.valueOf(35L));
+    when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(35L));
 
     assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(115L));
   }

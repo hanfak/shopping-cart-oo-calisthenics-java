@@ -60,7 +60,8 @@ public class CheckoutEndToEndTest {
 
   private final ScannedItems scannedItems = new ScannedItems();
   private final DiscountedItemCalculator discountedItemCalculator = new DiscountedItemCalculator();
-  private final NonDiscountedItemCalculator nonDiscountedItemCalculator = new NonDiscountedItemCalculator();
+  private final DiscountedItemRepository discountedItemRepository = new DiscountedItemRepository();
+  private final NonDiscountedItemCalculator nonDiscountedItemCalculator = new NonDiscountedItemCalculator(discountedItemRepository);
   private final ItemTotalCalculator itemTotalCalculator = new ItemTotalCalculator(discountedItemCalculator, nonDiscountedItemCalculator);
   private final Checkout underTest = new Checkout(scannedItems, itemTotalCalculator);
 }

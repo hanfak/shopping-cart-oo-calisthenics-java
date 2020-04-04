@@ -4,6 +4,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 // TODO interface
 public class ScannedItems {// TODO make this class a stub and put into test package. Use interface in prod
+
   List<Item> scannedItems = new ArrayList<>(); // TODO inject arraylist or use interface
 
   public void addItem(Item item) {
