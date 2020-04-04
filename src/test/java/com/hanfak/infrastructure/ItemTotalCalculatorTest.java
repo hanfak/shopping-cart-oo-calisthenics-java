@@ -1,6 +1,7 @@
-package com.hanfak.usecase;
+package com.hanfak.infrastructure;
 
 import com.hanfak.domain.Item;
+import com.hanfak.repository.ScannedItemsRepository;
 import org.junit.Test;
 import stubs.ScannedItemsStub;
 

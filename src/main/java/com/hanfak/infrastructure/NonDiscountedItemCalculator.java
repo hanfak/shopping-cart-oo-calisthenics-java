@@ -1,6 +1,8 @@
-package com.hanfak.usecase;
+package com.hanfak.infrastructure;
 
 import com.hanfak.domain.Item;
+import com.hanfak.repository.DiscountedItemRepository;
+import com.hanfak.repository.ScannedItemsRepository;
 
 import java.math.BigDecimal;
 import java.util.List;

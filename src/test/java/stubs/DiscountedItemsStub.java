@@ -1,7 +1,7 @@
 package stubs;
 
 import com.hanfak.domain.Item;
-import com.hanfak.usecase.DiscountedItemRepository;
+import com.hanfak.repository.DiscountedItemRepository;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

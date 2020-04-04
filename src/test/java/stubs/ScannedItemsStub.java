@@ -1,7 +1,7 @@
 package stubs;
 
 import com.hanfak.domain.Item;
-import com.hanfak.usecase.ScannedItemsRepository;
+import com.hanfak.repository.ScannedItemsRepository;
 
 import java.util.ArrayList;
 import java.util.Collections;

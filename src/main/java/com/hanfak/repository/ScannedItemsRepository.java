@@ -1,4 +1,4 @@
-package com.hanfak.usecase;
+package com.hanfak.repository;
 
 import com.hanfak.domain.Item;
 

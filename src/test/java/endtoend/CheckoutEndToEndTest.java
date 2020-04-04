@@ -1,6 +1,10 @@
 package endtoend;
 
 import com.hanfak.domain.Item;
+import com.hanfak.infrastructure.DiscountedItemCalculator;
+import com.hanfak.repository.DiscountedItemRepository;
+import com.hanfak.infrastructure.ItemTotalCalculator;
+import com.hanfak.infrastructure.NonDiscountedItemCalculator;
 import com.hanfak.usecase.*;
 import org.junit.Ignore;
 import org.junit.Test;

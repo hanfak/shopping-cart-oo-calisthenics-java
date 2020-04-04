@@ -1,8 +1,11 @@
-package com.hanfak.usecase;
+package com.hanfak.infrastructure;
+
+import com.hanfak.repository.ScannedItemsRepository;
+import com.hanfak.usecase.TotalCalculator;
 
 import java.math.BigDecimal;
 
-public class ItemTotalCalculator {
+public class ItemTotalCalculator implements TotalCalculator {
 
   private final DiscountedItemCalculator discountedItemCalculator;
   private final NonDiscountedItemCalculator nonDiscountedItemCalculator;
@@ -12,6 +15,7 @@ public class ItemTotalCalculator {
     this.nonDiscountedItemCalculator = nonDiscountedItemCalculator;
   }
 
+  @Override
   public BigDecimal calculateTotal(ScannedItemsRepository scannedItems) {
     return calculateTotalOfAllNonDiscountedItems(scannedItems).add(calculateTotalOfAllDiscountedItems(scannedItems));
   }
