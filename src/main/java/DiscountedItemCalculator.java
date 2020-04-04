@@ -5,22 +5,22 @@ public class DiscountedItemCalculator {
   // TODO inject DiscountedItemRepoistory (interface)
   // TODO inject rules engined, which injects DiscountedItemRepoistory
 
-  public BigDecimal calculate(ScannedItemsRepository scannedItemsRepository) {
-    BigDecimal itemADiscountedTotal = calulateTotalOfDiscountedItemsA(calculateTotalOfItems(scannedItemsRepository.itemsOfName("A")), scannedItemsRepository);
-    BigDecimal itemBDiscountedTotal = calulateTotalOfDiscountedItemsB(calculateTotalOfItems(scannedItemsRepository.itemsOfName("B")), scannedItemsRepository);
+  public BigDecimal calculate(ScannedItemsRepository scannedItems) {
+    BigDecimal itemADiscountedTotal = calulateTotalOfDiscountedItemsA(calculateTotalOfItems(scannedItems.itemsOfName("A")), scannedItems);
+    BigDecimal itemBDiscountedTotal = calulateTotalOfDiscountedItemsB(calculateTotalOfItems(scannedItems.itemsOfName("B")), scannedItems);
     return itemADiscountedTotal.add(itemBDiscountedTotal);
   }
 
   // TODO apply a rules engine
-  private BigDecimal calulateTotalOfDiscountedItemsA(BigDecimal totalDiscountedItems, ScannedItemsRepository scannedItemsRepository) {
-    if (scannedItemsRepository.numberOfScannedItem("A") == 3) {
+  private BigDecimal calulateTotalOfDiscountedItemsA(BigDecimal totalDiscountedItems, ScannedItemsRepository scannedItems) {
+    if (scannedItems.numberOfScannedItem("A") == 3) {
       return totalDiscountedItems.subtract(BigDecimal.valueOf(20L));
     }
     return totalDiscountedItems;
   }
 
-  private BigDecimal calulateTotalOfDiscountedItemsB(BigDecimal totalDiscountedItems, ScannedItemsRepository scannedItemsRepository) {
-    if (scannedItemsRepository.numberOfScannedItem("B") == 2) {
+  private BigDecimal calulateTotalOfDiscountedItemsB(BigDecimal totalDiscountedItems, ScannedItemsRepository scannedItems) {
+    if (scannedItems.numberOfScannedItem("B") == 2) {
       return totalDiscountedItems.subtract(BigDecimal.valueOf(15L));
     }
     return totalDiscountedItems;

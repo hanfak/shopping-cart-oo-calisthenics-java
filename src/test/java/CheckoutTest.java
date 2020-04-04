@@ -13,21 +13,21 @@ public class CheckoutTest {
   public void canAddAScannedItem() {
     underTest.scan(ITEM_A);
 
-    verify(scannedItemsRepository).addItem(ITEM_A);
+    verify(scannedItems).addItem(ITEM_A);
   }
 
   @Test
   public void canFindTotalOfAllScannedItems() {
-    when(itemsTotalCalculator.calculateTotal(scannedItemsRepository)).thenReturn(BigDecimal.valueOf(50L));
+    when(itemsTotalCalculator.calculateTotal(scannedItems)).thenReturn(BigDecimal.valueOf(50L));
     BigDecimal actualTotal = underTest.total();
 
     assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(50L));
-    verify(itemsTotalCalculator).calculateTotal(scannedItemsRepository);
+    verify(itemsTotalCalculator).calculateTotal(scannedItems);
   }
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
 
-  private final ScannedItemsRepository scannedItemsRepository = mock(ScannedItems.class);
+  private final ScannedItemsRepository scannedItems = mock(ScannedItems.class);
   private final ItemTotalCalculator itemsTotalCalculator = mock(ItemTotalCalculator.class);
-  private final Checkout underTest = new Checkout(scannedItemsRepository, itemsTotalCalculator);
+  private final Checkout underTest = new Checkout(scannedItems, itemsTotalCalculator);
 }
