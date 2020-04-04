@@ -2,7 +2,6 @@ package com.hanfak.usecase;
 
 import com.hanfak.domain.Item;
 import org.junit.Test;
-import com.hanfak.repository.DiscountedItemRepository;
 import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;

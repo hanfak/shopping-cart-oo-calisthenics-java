@@ -1,10 +1,10 @@
 package endtoend;
 
 import com.hanfak.domain.Item;
+import com.hanfak.usecase.*;
 import org.junit.Ignore;
 import org.junit.Test;
-import com.hanfak.repository.DiscountedItemRepository;
-import com.hanfak.usecase.*;
+import stubs.DiscountedItemsStub;
 import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;
@@ -66,7 +66,7 @@ public class CheckoutEndToEndTest {
 
   private final ScannedItemsStub scannedItems = new ScannedItemsStub();
   private final DiscountedItemCalculator discountedItemCalculator = new DiscountedItemCalculator();
-  private final DiscountedItemRepository discountedItemRepository = new DiscountedItemRepository();
+  private final DiscountedItemRepository discountedItemRepository = new DiscountedItemsStub();
   private final NonDiscountedItemCalculator nonDiscountedItemCalculator = new NonDiscountedItemCalculator(discountedItemRepository);
   private final ItemTotalCalculator itemTotalCalculator = new ItemTotalCalculator(discountedItemCalculator, nonDiscountedItemCalculator);
   private final Checkout underTest = new Checkout(scannedItems, itemTotalCalculator);
