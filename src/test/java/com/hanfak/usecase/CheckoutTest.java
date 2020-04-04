@@ -2,7 +2,6 @@ package com.hanfak.usecase;
 
 import com.hanfak.domain.Item;
 import org.junit.Test;
-import com.hanfak.repository.ScannedItems;
 
 import java.math.BigDecimal;
 
@@ -31,7 +30,7 @@ public class CheckoutTest {
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
 
-  private final ScannedItemsRepository scannedItems = mock(ScannedItems.class);
+  private final ScannedItemsRepository scannedItems = mock(ScannedItemsRepository.class);
   private final ItemTotalCalculator itemsTotalCalculator = mock(ItemTotalCalculator.class);
   private final Checkout underTest = new Checkout(scannedItems, itemsTotalCalculator);
 }

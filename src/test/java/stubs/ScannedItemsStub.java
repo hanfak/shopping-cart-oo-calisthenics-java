@@ -1,16 +1,17 @@
-package com.hanfak.repository;
+package stubs;
 
 import com.hanfak.domain.Item;
 import com.hanfak.usecase.ScannedItemsRepository;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public class ScannedItems implements ScannedItemsRepository {// TODO make this class a stub and put into test package. Use interface in prod
+public class ScannedItemsStub implements ScannedItemsRepository {// TODO make this class a stub and put into test package. Use interface in prod
 
-  List<Item> scannedItems = new ArrayList<>(); // TODO inject arraylist or use interface
+  List<Item> scannedItems = new ArrayList<>();
 
   @Override
   public void addItem(Item item) {
@@ -19,7 +20,7 @@ public class ScannedItems implements ScannedItemsRepository {// TODO make this c
 
   @Override
   public List<Item> allItems() {
-    return scannedItems; // TODO: immodifaible list
+    return Collections.unmodifiableList(scannedItems);
   }
 
   @Override

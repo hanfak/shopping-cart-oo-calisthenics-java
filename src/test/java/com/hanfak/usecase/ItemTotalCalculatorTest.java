@@ -2,7 +2,7 @@ package com.hanfak.usecase;
 
 import com.hanfak.domain.Item;
 import org.junit.Test;
-import com.hanfak.repository.ScannedItems;
+import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;
 
@@ -14,7 +14,7 @@ public class ItemTotalCalculatorTest {
 
   @Test
   public void findTotalOfOneItem() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(50L));
     when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.ZERO);
@@ -24,7 +24,7 @@ public class ItemTotalCalculatorTest {
 
   @Test
   public void findTotalOfMultipleItems() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_B);
     scannedItems.addItem(ITEM_C);

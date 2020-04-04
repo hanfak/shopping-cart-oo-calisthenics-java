@@ -4,8 +4,8 @@ import com.hanfak.domain.Item;
 import org.junit.Ignore;
 import org.junit.Test;
 import com.hanfak.repository.DiscountedItemRepository;
-import com.hanfak.repository.ScannedItems;
 import com.hanfak.usecase.*;
+import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;
 
@@ -64,7 +64,7 @@ public class CheckoutEndToEndTest {
   private static final Item ITEM_C = new Item("C", BigDecimal.valueOf(20L));
   private static final Item ITEM_D = new Item("D", BigDecimal.valueOf(15L));
 
-  private final ScannedItems scannedItems = new ScannedItems();
+  private final ScannedItemsStub scannedItems = new ScannedItemsStub();
   private final DiscountedItemCalculator discountedItemCalculator = new DiscountedItemCalculator();
   private final DiscountedItemRepository discountedItemRepository = new DiscountedItemRepository();
   private final NonDiscountedItemCalculator nonDiscountedItemCalculator = new NonDiscountedItemCalculator(discountedItemRepository);

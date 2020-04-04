@@ -2,17 +2,17 @@ package com.hanfak.usecase;
 
 import com.hanfak.domain.Item;
 import org.junit.Test;
-import com.hanfak.repository.ScannedItems;
+import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;
 
 import static org.assertj.core.api.Assertions.assertThat;
-//TODO use mocks or stub
+
 public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfDiscountAppliedOnlyOneAItemsScanned() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
 
     BigDecimal actualTotal = underTest.calculate(scannedItems);
@@ -22,7 +22,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfDiscountAppliedWithThreeAItemsScanned() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
@@ -34,7 +34,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfDiscountAppliedOnlyOneBItemsScanned() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_B);
 
     BigDecimal actualTotal = underTest.calculate(scannedItems);
@@ -44,7 +44,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfDiscountAppliedWithTwoBItemsScanned() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_B);
     scannedItems.addItem(ITEM_B);
 
@@ -55,7 +55,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfCombinationOfDiscountedAAndBItems() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
@@ -69,7 +69,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfCombinationOfDiscountedAAndNoDiscountAppliedToBItems() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
@@ -82,7 +82,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfCombinationOfDiscountedBAndNoDiscountAppliedToAItems() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_B);
@@ -95,7 +95,7 @@ public class DiscountedItemCalculatorTest {
 
   @Test
   public void findTotalOfCombinationOfDiscountedItemsWhereNoDiscountApplied() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_B);

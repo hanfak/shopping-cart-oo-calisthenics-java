@@ -3,7 +3,7 @@ package com.hanfak.usecase;
 import com.hanfak.domain.Item;
 import org.junit.Test;
 import com.hanfak.repository.DiscountedItemRepository;
-import com.hanfak.repository.ScannedItems;
+import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -14,12 +14,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-// tODO use mocks or stub
 public class NonDiscountedItemCalculatorTest {
 
   @Test
   public void findTotalWithOneItemAndNoDiscountedItemsAvailable() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_C);
 
     BigDecimal actualTotal = underTest.calculate(scannedItems);
@@ -29,7 +28,7 @@ public class NonDiscountedItemCalculatorTest {
 
   @Test
   public void findTotalWithMutlipleItemsAndNoDiscountedItemsAvailable() {
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_C);
     scannedItems.addItem(ITEM_D);
 
@@ -42,7 +41,7 @@ public class NonDiscountedItemCalculatorTest {
   public void findTotalWithOneDiscountedItemsAvailable() {
     when(discountedItemRepository.findAllDiscountedItems())
             .thenReturn(singletonList(new Item("A", BigDecimal.valueOf(50L))));
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
 
     BigDecimal actualTotal = underTest.calculate(scannedItems);
@@ -53,7 +52,7 @@ public class NonDiscountedItemCalculatorTest {
   @Test
   public void findTotalWithMultipleDiscountedItemsAvailable() {
     when(discountedItemRepository.findAllDiscountedItems()).thenReturn(discountedItems);
-    ScannedItemsRepository scannedItems = new ScannedItems();
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
     scannedItems.addItem(ITEM_A);
     scannedItems.addItem(ITEM_B);
     scannedItems.addItem(ITEM_C);
