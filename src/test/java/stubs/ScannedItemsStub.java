@@ -9,7 +9,7 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public class ScannedItemsStub implements ScannedItemsRepository {// TODO make this class a stub and put into test package. Use interface in prod
+public class ScannedItemsStub implements ScannedItemsRepository {
 
   List<Item> scannedItems = new ArrayList<>();
 

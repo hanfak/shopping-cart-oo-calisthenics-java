@@ -16,11 +16,15 @@ public class NonDiscountedItemCalculator {
   }
 
   public BigDecimal calculate(ScannedItemsRepository scannedItems) {
-    List<Item> allDiscountedItems = discountedItemRepository.findAllDiscountedItems();
     return scannedItems.allItems().stream()
-            .filter(item -> !allDiscountedItems.contains(item))
+            .filter(this::itemIsNotADiscountedItem)
             .map(Item::getPrice)
             .reduce(BigDecimal.ZERO, BigDecimal::add);
+  }
+
+  private boolean itemIsNotADiscountedItem(Item item) {
+    List<Item> allDiscountedItems = discountedItemRepository.findAllDiscountedItems();
+    return !allDiscountedItems.contains(item);
   }
 }
 

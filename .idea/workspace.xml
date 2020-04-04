@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fff87e2e-f267-4734-bd34-811f627ffff1" name="Default" comment="" />
+    <list default="true" id="fff87e2e-f267-4734-bd34-811f627ffff1" name="Default" comment="first test">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hanfak/infrastructure/DiscountedItemCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hanfak/infrastructure/DiscountedItemCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hanfak/infrastructure/NonDiscountedItemCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hanfak/infrastructure/NonDiscountedItemCalculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="141" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -16,7 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -41,22 +60,57 @@
     <option name="height" value="873" />
   </component>
   <component name="ProjectId" id="1ZaVFZoOAUdT0plwk0oWvcYCnFX" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../workspace/palinedrome" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.hanfak.repository" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hanfak.infrastructure" />
+      <recent name="com.hanfak.usecase" />
+      <recent name="com.hanfak.domain" />
+      <recent name="com.hanfak.repository" />
+      <recent name="repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="stubs" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hanfak.infrastructure" />
+      <recent name="stubs" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckoutTest">
+  <component name="RunManager" selected="JUnit.All in shopping-cart">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -167,21 +221,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in shopping-cart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheckoutTest" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutEndToEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="endtoend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="endtoend" />
+      <option name="MAIN_CLASS_NAME" value="endtoend.CheckoutEndToEndTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutTest.scanItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountedItemRepositoryTest.returnAllItemsThatAreDiscounted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheckoutTest" />
-      <option name="METHOD_NAME" value="scanItems" />
+      <option name="PACKAGE_NAME" value="com.hanfak.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.hanfak.repository.DiscountedItemRepositoryTest" />
+      <option name="METHOD_NAME" value="returnAllItemsThatAreDiscounted" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NonDiscountedItemCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <option name="PACKAGE_NAME" value="com.hanfak.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="com.hanfak.infrastructure.NonDiscountedItemCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NonDiscountedItemCalculatorTest.findTotalWithOneDiscountedItemsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <option name="PACKAGE_NAME" value="com.hanfak.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="com.hanfak.infrastructure.NonDiscountedItemCalculatorTest" />
+      <option name="METHOD_NAME" value="findTotalWithOneDiscountedItemsAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -249,8 +339,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CheckoutTest" />
-        <item itemvalue="JUnit.CheckoutTest.scanItems" />
+        <item itemvalue="JUnit.All in shopping-cart" />
+        <item itemvalue="JUnit.CheckoutEndToEndTest" />
+        <item itemvalue="JUnit.DiscountedItemRepositoryTest.returnAllItemsThatAreDiscounted" />
+        <item itemvalue="JUnit.NonDiscountedItemCalculatorTest" />
+        <item itemvalue="JUnit.NonDiscountedItemCalculatorTest.findTotalWithOneDiscountedItemsAvailable" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +358,154 @@
       <option name="presentableId" value="Default" />
       <updated>1489342792372</updated>
     </task>
+    <task id="LOCAL-00001" summary="initcommit setup">
+      <created>1585077214993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585077214993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first test">
+      <created>1585077231726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585077231726</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Total of multiple scanned unique items">
+      <created>1585077589714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585077589714</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Discount when only three item A">
+      <created>1585078868281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585078868281</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Extract to class ScannedItems and methods relating to it">
+      <created>1585121725286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585121725286</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactoring: Inject ScannedItems, instead of init in class">
+      <created>1585121844983</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585121844984</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Extracting TotalCalculation out. first test">
+      <created>1585122482265</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585122482265</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Calculate nondiscountedtotals&#10;Use ItemTotalCalculator in Checkout">
+      <created>1585123079250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585123079250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="calculateDiscount of item A, and find total">
+      <created>1585123975870</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585123975870</updated>
+    </task>
+    <task id="LOCAL-00010" summary="extract finding all numbersof specific item to ScannedItems">
+      <created>1585124345188</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585124345188</updated>
+    </task>
+    <task id="LOCAL-00011" summary="discount for item b, for only 2 b  items">
+      <created>1585126154935</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585126154935</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactoring">
+      <created>1585988927600</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585988927601</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactoring: extracting logic for calculating totals to specific classes rather than in the Checkout class">
+      <created>1586010497745</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586010497745</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactoring:&#10;- Added Lombok, to get equals, immutbale class. No testing as library is tested&#10;- Passed in source of discounted items to NonDiscountedItemCalculator as dependency rather than method arg, as call class will need to be changed constently when discounted items are changed/added">
+      <created>1586012384924</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586012384924</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactoring simplified prod code">
+      <created>1586012457264</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1586012457264</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor&#10;- ScannedItems implements repository">
+      <created>1586012619392</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586012619392</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor&#10;- ScannedItemsRepository variables renamed to be less verbose">
+      <created>1586012740428</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586012740428</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor: sort out package structure">
+      <created>1586013232009</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013232009</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactor&#10;- ScannedItems removed, use interface instead. The tests use a stub that implements interface (which is same implementation of ScannedItems). Allows for prod code to use whatever implementation it wants ie file/db">
+      <created>1586013667502</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013667502</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactor&#10;- DiscountedItemRepository removed, use interface instead. Using stub that implements repository">
+      <created>1586014113253</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014113253</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactor - more restructuring">
+      <created>1586014380226</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014380226</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +513,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -286,34 +529,181 @@
       <collection />
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initcommit setup" />
+    <MESSAGE value="first test" />
+    <MESSAGE value="Total of multiple scanned unique items" />
+    <MESSAGE value="Discount when only three item A" />
+    <MESSAGE value="Extract to class ScannedItems and methods relating to it" />
+    <MESSAGE value="refactoring: Inject ScannedItems, instead of init in class" />
+    <MESSAGE value="Extracting TotalCalculation out. first test" />
+    <MESSAGE value="Calculate nondiscountedtotals&#10;Use ItemTotalCalculator in Checkout" />
+    <MESSAGE value="calculateDiscount of item A, and find total" />
+    <MESSAGE value="extract finding all numbersof specific item to ScannedItems" />
+    <MESSAGE value="discount for item b, for only 2 b  items" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="refactoring: extracting logic for calculating totals to specific classes rather than in the Checkout class" />
+    <MESSAGE value="Refactoring:&#10;- Added Lombok, to get equals, immutbale class. No testing as library is tested&#10;- Passed in source of discounted items to NonDiscountedItemCalculator as dependency rather than method arg, as call class will need to be changed constently when discounted items are changed/added" />
+    <MESSAGE value="Refactoring simplified prod code" />
+    <MESSAGE value="refactor&#10;- ScannedItems implements repository" />
+    <MESSAGE value="refactor&#10;- ScannedItemsRepository variables renamed to be less verbose" />
+    <MESSAGE value="refactor: sort out package structure" />
+    <MESSAGE value="refactor&#10;- ScannedItems removed, use interface instead. The tests use a stub that implements interface (which is same implementation of ScannedItems). Allows for prod code to use whatever implementation it wants ie file/db" />
+    <MESSAGE value="refactor&#10;- DiscountedItemRepository removed, use interface instead. Using stub that implements repository" />
+    <MESSAGE value="refactor - more restructuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor - more restructuring" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="0" key="CommitChangelistDialog2" timestamp="1585077170473">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="240" y="77" key="#Plugins" timestamp="1586011840005">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="205" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585077170473" />
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1585040506708">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="240" y="77" key="#Plugins/0.23.1280.777@0.23.1280.777" timestamp="1586011840005" />
+    <state x="193" y="179" key="#com.intellij.debugger.streams.ui.EvaluationAwareTraceWindow" timestamp="1586011166672">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="193" y="161" key="#com.intellij.debugger.streams.ui.EvaluationAwareTraceWindow/0.0.1280.800@0.0.1280.800" timestamp="1585124927312" />
+    <state x="193" y="179" key="#com.intellij.debugger.streams.ui.EvaluationAwareTraceWindow/0.23.1280.777@0.23.1280.777" timestamp="1586011166672" />
+    <state x="453" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586014291376">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="453" y="128" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1586014291376" />
+    <state x="414" y="278" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586014187471">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="414" y="278" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.777@0.23.1280.777" timestamp="1586014187471" />
+    <state x="220" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586013813118">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="220" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1585121761700" />
+    <state x="220" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1586013813118" />
+    <state x="403" y="130" key="#xdebugger.evaluate" timestamp="1586010259002">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="403" y="110" key="#xdebugger.evaluate/0.0.1280.800@0.0.1280.800" timestamp="1585125267921" />
+    <state x="403" y="130" key="#xdebugger.evaluate/0.23.1280.777@0.23.1280.777" timestamp="1586010259002" />
+    <state x="211" y="23" key="CommitChangelistDialog2" timestamp="1586014379862">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="205" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1585126159123" />
+    <state x="211" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1586014379862" />
+    <state x="118" y="89" key="DiffContextDialog" timestamp="1586013227023">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="118" y="68" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1585123076980" />
+    <state x="118" y="89" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1586013227023" />
+    <state width="1238" height="188" key="GridCell.Tab.0.bottom" timestamp="1586014946047">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585133081476" />
     <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585040506708" />
-    <state width="1398" height="237" key="GridCell.Tab.0.center" timestamp="1585040506706">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="188" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586014946047" />
+    <state width="1238" height="188" key="GridCell.Tab.0.center" timestamp="1586014946046">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1238" height="253" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585133081474" />
     <state width="1398" height="237" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585040506706" />
-    <state width="1398" height="237" key="GridCell.Tab.0.left" timestamp="1585040506705">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="188" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586014946046" />
+    <state width="1238" height="188" key="GridCell.Tab.0.left" timestamp="1586014946044">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1238" height="253" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585133081473" />
     <state width="1398" height="237" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585040506705" />
-    <state width="1398" height="237" key="GridCell.Tab.0.right" timestamp="1585040506707">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="188" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586014946044" />
+    <state width="1238" height="188" key="GridCell.Tab.0.right" timestamp="1586014946047">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1238" height="253" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585133081475" />
     <state width="1398" height="237" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585040506707" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1585040365486">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="188" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586014946047" />
+    <state width="1238" height="235" key="GridCell.Tab.1.bottom" timestamp="1586011393708">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585133081479" />
+    <state width="1238" height="235" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586011393708" />
+    <state width="1238" height="235" key="GridCell.Tab.1.center" timestamp="1586011393708">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1585133081477" />
+    <state width="1238" height="235" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1586011393708" />
+    <state width="1238" height="235" key="GridCell.Tab.1.left" timestamp="1586011393707">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1585133081476" />
+    <state width="1238" height="235" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1586011393707" />
+    <state width="1238" height="235" key="GridCell.Tab.1.right" timestamp="1586011393708">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1585133081478" />
+    <state width="1238" height="235" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1586011393708" />
+    <state width="500" height="416" key="SwitcherDM" timestamp="1586012251047">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="500" height="400" key="SwitcherDM/0.0.1280.800@0.0.1280.800" timestamp="1585078044398" />
     <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1585040365486" />
-    <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1585077101439">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="500" height="416" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1586012251047" />
+    <state x="240" y="159" key="Vcs.Push.Dialog.v2" timestamp="1586013241040">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1585126163189" />
+    <state x="240" y="159" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1586013241040" />
+    <state x="124" y="166" key="caller.chooser.dialog" timestamp="1585990996750">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="124" y="166" key="caller.chooser.dialog/0.23.1280.777@0.23.1280.777" timestamp="1585990996750" />
+    <state x="435" y="196" key="chooseDestDirectoryDialog" timestamp="1586013757114">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="435" y="196" key="chooseDestDirectoryDialog/0.23.1280.777@0.23.1280.777" timestamp="1586013757114" />
+    <state x="319" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1586011860768">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585077101439" />
+    <state x="319" y="248" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1586011860768" />
+    <state x="255" y="13" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585078536758">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="255" y="13" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800@0.0.1280.800" timestamp="1585078536758" />
+    <state x="403" y="153" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586012160353">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="403" y="134" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585122090568" />
+    <state x="403" y="153" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.777@0.23.1280.777" timestamp="1586012160353" />
+    <state x="458" y="320" key="extract.method.dialog" timestamp="1586014492809">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585120890400" />
+    <state x="458" y="320" key="extract.method.dialog/0.23.1280.777@0.23.1280.777" timestamp="1586014492809" />
+    <state x="306" y="47" width="816" height="729" key="find.popup" timestamp="1586012685514">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="306" y="47" width="816" height="729" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1586012685514" />
+    <state x="402" y="27" key="refactoring.ChangeSignatureDialog" timestamp="1586010595829">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="402" y="13" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585123093533" />
+    <state x="402" y="27" key="refactoring.ChangeSignatureDialog/0.23.1280.777@0.23.1280.777" timestamp="1586010595829" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1586011828837">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1586011828837" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hanfak/usecase/Checkout.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/shopping_cart_oo_calisthenics_java$ScannedItemsTest.ic" NAME="ScannedItemsTest Coverage Results" MODIFIED="1586009919798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping_cart_oo_calisthenics_java$DiscountedItemCalculatorTest.ic" NAME="DiscountedItemCalculatorTest Coverage Results" MODIFIED="1586009837475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping_cart_oo_calisthenics_java$All_in_shopping_cart.ic" NAME="All in shopping-cart Coverage Results" MODIFIED="1585992872549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping_cart_oo_calisthenics_java$ItemTotalCalculatorTest.ic" NAME="ItemTotalCalculatorTest Coverage Results" MODIFIED="1586009887064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping_cart_oo_calisthenics_java$NonDiscountedItemCalculatorTest.ic" NAME="NonDiscountedItemCalculatorTest Coverage Results" MODIFIED="1586009853797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shopping_cart_oo_calisthenics_java$CheckoutTest.ic" NAME="CheckoutTest Coverage Results" MODIFIED="1586009907296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
