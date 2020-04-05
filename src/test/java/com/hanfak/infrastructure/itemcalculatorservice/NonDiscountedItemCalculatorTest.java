@@ -1,4 +1,4 @@
-package com.hanfak.infrastructure;
+package com.hanfak.infrastructure.itemcalculatorservice;
 
 import com.hanfak.domain.Item;
 import com.hanfak.repository.DiscountedItemRepository;

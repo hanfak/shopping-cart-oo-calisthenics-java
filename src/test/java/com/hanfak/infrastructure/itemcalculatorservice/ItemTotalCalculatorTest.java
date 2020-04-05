@@ -1,7 +1,8 @@
-package com.hanfak.infrastructure;
+package com.hanfak.infrastructure.itemcalculatorservice;
 
 import com.hanfak.domain.Item;
 import com.hanfak.repository.ScannedItemsRepository;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import stubs.ScannedItemsStub;
 
@@ -20,7 +21,7 @@ public class ItemTotalCalculatorTest {
     when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(50L));
     when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.ZERO);
 
-    assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(50L));
+    Assertions.assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(50L));
   }
 
   @Test
@@ -33,7 +34,7 @@ public class ItemTotalCalculatorTest {
     when(discountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(80L));
     when(nonDiscountedItemCalculator.calculate(scannedItems)).thenReturn(BigDecimal.valueOf(35L));
 
-    assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(115L));
+    Assertions.assertThat(underTest.calculateTotal(scannedItems)).isEqualTo(BigDecimal.valueOf(115L));
   }
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));

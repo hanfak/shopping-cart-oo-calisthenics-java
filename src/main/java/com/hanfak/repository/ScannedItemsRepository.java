@@ -12,4 +12,6 @@ public interface ScannedItemsRepository {
   List<Item> itemsOfName(String itemName);
 
   int numberOfScannedItem(String itemName);
+
+  List<Item> itemsOfLength(int limit, String itemName);
 }

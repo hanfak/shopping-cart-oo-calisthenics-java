@@ -1,10 +1,10 @@
 package endtoend;
 
 import com.hanfak.domain.Item;
-import com.hanfak.infrastructure.DiscountedItemCalculator;
+import com.hanfak.infrastructure.itemcalculatorservice.DiscountedItemCalculator;
 import com.hanfak.repository.DiscountedItemRepository;
-import com.hanfak.infrastructure.ItemTotalCalculator;
-import com.hanfak.infrastructure.NonDiscountedItemCalculator;
+import com.hanfak.infrastructure.itemcalculatorservice.ItemTotalCalculator;
+import com.hanfak.infrastructure.itemcalculatorservice.NonDiscountedItemCalculator;
 import com.hanfak.usecase.*;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -53,14 +53,24 @@ public class CheckoutEndToEndTest {
   }
 
   @Test
-  @Ignore
-  public void scanMultipleDiscountedItemsAndOtherItemThatDoesnotGetDiscounted() {
+//  @Ignore
+  public void scanMultipleDiscountedItemsAAndOtherItemThatDoesnotGetDiscounted() {
     underTest.scan(ITEM_A);
     underTest.scan(ITEM_A);
     underTest.scan(ITEM_A);
     underTest.scan(ITEM_A);
 
     assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(180L));
+  }
+
+  @Test
+//  @Ignore
+  public void scanMultipleDiscountedItemsBAndOtherItemThatDoesnotGetDiscounted() {
+    underTest.scan(ITEM_B);
+    underTest.scan(ITEM_B);
+    underTest.scan(ITEM_B);
+
+    assertThat(underTest.total()).isEqualTo(BigDecimal.valueOf(75L));
   }
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));

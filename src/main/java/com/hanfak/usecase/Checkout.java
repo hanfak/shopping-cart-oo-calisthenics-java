@@ -1,7 +1,7 @@
 package com.hanfak.usecase;
 
 import com.hanfak.domain.Item;
-import com.hanfak.infrastructure.ItemTotalCalculator;
+import com.hanfak.infrastructure.itemcalculatorservice.ItemTotalCalculator;
 import com.hanfak.repository.ScannedItemsRepository;
 
 import java.math.BigDecimal;

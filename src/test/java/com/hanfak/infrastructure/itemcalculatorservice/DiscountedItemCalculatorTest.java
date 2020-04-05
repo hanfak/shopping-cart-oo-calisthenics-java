@@ -1,4 +1,4 @@
-package com.hanfak.infrastructure;
+package com.hanfak.infrastructure.itemcalculatorservice;
 
 import com.hanfak.domain.Item;
 import com.hanfak.repository.ScannedItemsRepository;
@@ -104,6 +104,22 @@ public class DiscountedItemCalculatorTest {
     BigDecimal actualTotal = underTest.calculate(scannedItems);
 
     assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(130L));
+  }
+
+  @Test
+  public void findTotalOfCombinationOfDiscountedItemsWhereDiscountIsBothAppliedAndNotApplied() {
+    ScannedItemsRepository scannedItems = new ScannedItemsStub();
+    scannedItems.addItem(ITEM_A);
+    scannedItems.addItem(ITEM_A);
+    scannedItems.addItem(ITEM_A);
+    scannedItems.addItem(ITEM_A);
+    scannedItems.addItem(ITEM_B);
+    scannedItems.addItem(ITEM_B);
+    scannedItems.addItem(ITEM_B);
+
+    BigDecimal actualTotal = underTest.calculate(scannedItems);
+
+    assertThat(actualTotal).isEqualTo(BigDecimal.valueOf(255L));
   }
 
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));

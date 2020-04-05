@@ -34,4 +34,12 @@ public class ScannedItemsStub implements ScannedItemsRepository {
   public int numberOfScannedItem(String itemName) {
     return itemsOfName(itemName).size();
   }
+
+  @Override
+  public List<Item> itemsOfLength(int limit, String itemName) {
+    return scannedItems.stream()
+            .filter(item -> item.getName().equals(itemName))
+            .limit(limit)
+            .collect(toList());
+  }
 }

@@ -1,4 +1,4 @@
-package com.hanfak.infrastructure;
+package com.hanfak.infrastructure.itemcalculatorservice;
 
 import com.hanfak.repository.ScannedItemsRepository;
 import com.hanfak.usecase.TotalCalculator;
