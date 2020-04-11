@@ -1,3 +1,6 @@
+ For version one: https://github.com/hanfak/shopping-cart-oo-calisthenics-java
+ For version two: https://github.com/hanfak/shopping-cart-oo-calisthenics-java/tree/version2
+ 
  # Rules
 
  See

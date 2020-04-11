@@ -5,6 +5,6 @@ package shoppingcart;
  */
 public class MoneyCalculator {
     public Money increaseMoney(Money amount, Money moneytoAdd) {
-        return new Money(Integer.parseInt(amount.toString()) + Integer.parseInt(moneytoAdd.toString()))
+        return new Money(Integer.parseInt(amount.toString()) + Integer.parseInt(moneytoAdd.toString()));
     }
 }
