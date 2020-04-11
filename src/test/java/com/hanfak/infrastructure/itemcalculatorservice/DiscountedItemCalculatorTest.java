@@ -1,8 +1,10 @@
 package com.hanfak.infrastructure.itemcalculatorservice;
 
 import com.hanfak.domain.Item;
+import com.hanfak.repository.DiscountedItemRepository;
 import com.hanfak.repository.ScannedItemsRepository;
 import org.junit.Test;
+import stubs.DiscountedItemsStub;
 import stubs.ScannedItemsStub;
 
 import java.math.BigDecimal;
@@ -125,5 +127,6 @@ public class DiscountedItemCalculatorTest {
   private static final Item ITEM_A = new Item("A", BigDecimal.valueOf(50L));
   private static final Item ITEM_B = new Item("B", BigDecimal.valueOf(30L));
 
-  private final DiscountedItemCalculator underTest = new DiscountedItemCalculator();
+  private final DiscountedItemRepository discountedItemRepository = new DiscountedItemsStub();
+  private final DiscountedItemCalculator underTest = new DiscountedItemCalculator(discountedItemRepository);
 }

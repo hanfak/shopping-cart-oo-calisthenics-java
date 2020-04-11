@@ -6,6 +6,7 @@ import com.hanfak.repository.ScannedItemsRepository;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Set;
 
 public class NonDiscountedItemCalculator {
 
